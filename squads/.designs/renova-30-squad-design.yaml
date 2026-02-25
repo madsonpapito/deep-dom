@@ -1,0 +1,83 @@
+# squad-design.yaml for Renova 30
+squad:
+  name: renova-30
+  description: "Esquadrão para desenvolver a plataforma de bem-estar digital Renova 30."
+  domain: "Plataforma de bem-estar e fitness digital, focada em reposição hormonal natural para mulheres na menopausa."
+
+analysis:
+  entities:
+    - Aluna
+    - Protocolo Personalizado
+    - Treino
+    - Plano Alimentar
+    - Bônus
+    - Comunidade
+    - Pagamento
+  workflows:
+    - Jornada de Compra
+    - Onboarding da Aluna
+    - Consumo de Conteúdo
+    - Interação com a Comunidade
+    - Acompanhamento de Progresso
+  integrations:
+    - Gateway de Pagamento
+    - Plataforma de Hospedagem de Vídeo
+    - Telegram/Facebook API
+  stakeholders:
+    - Aluna
+    - Laís (Instrutora)
+
+recommendations:
+  agents:
+    - id: dev-fullstack
+      role: "Responsável pelo desenvolvimento completo da aplicação, incluindo a página de vendas, a área de membros e a integração com o sistema de pagamentos."
+      commands:
+        - build-sales-page
+        - build-members-area
+        - setup-payment-gateway
+        - implement-quiz
+      confidence: 0.95
+      user_added: false
+      user_modified: false
+    - id: ux-designer
+      role: "Responsável por projetar uma experiência de usuário clara e atraente para a página de vendas e a área de membros."
+      commands:
+        - design-sales-page-ux
+        - design-members-area-ux
+        - create-wireframes
+      confidence: 0.92
+      user_added: false
+      user_modified: false
+    - id: pm
+      role: "Organizar o backlog do projeto, quebrar a especificação em histórias de usuário, definir prioridades e garantir que a equipe esteja alinhada."
+      commands:
+        - create-backlog
+        - define-sprints
+        - track-progress
+      confidence: 0.98
+      user_added: false
+      user_modified: false
+    - id: qa
+      role: "Garantir a qualidade de todas as entregas, testando a página de vendas, o fluxo de compra, a área de membros e todas as funcionalidades."
+      commands:
+        - create-test-plan
+        - execute-functional-tests
+        - report-bugs
+      confidence: 0.99
+      user_added: false
+      user_modified: false
+    - id: content-manager
+      role: "Estruturar e carregar todo o conteúdo do curso (vídeos, PDFs, etc.) na área de membros."
+      commands:
+        - upload-course-videos
+        - structure-pdf-bonuses
+        - organize-content-modules
+      confidence: 0.85
+      user_added: false
+      user_modified: false
+
+metadata:
+  created_at: "2026-02-25T22:41:20.8341716Z"
+  source_docs: ["ideia.md"]
+  user_adjustments: 0
+  overall_confidence: 0.94
