@@ -43,7 +43,7 @@ export default function HomePage() {
             >
               QUERO TRANSFORMAR MEU CORPO POR R$67
             </Link>
-            <p className="text-center text-sm mt-2 text-white/50">Garantia de 7 dias "feliz ou seu dinheiro de volta".</p>
+            <p className="text-center text-sm mt-2 text-white/50">Garantia de 7 dias &quot;feliz ou seu dinheiro de volta&quot;.</p>
         </div>
 
 
