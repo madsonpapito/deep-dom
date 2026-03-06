@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,7 +79,7 @@
             font-size: 2.5rem;
             margin-bottom: 40px;
         }
-        
+
         .pilares {
             display: flex;
             justify-content: space-around;
@@ -94,7 +95,7 @@
             width: 250px;
             transition: all 0.3s ease;
         }
-        
+
         .pilar:hover {
             transform: translateY(-10px);
             background-color: rgba(197, 160, 89, 0.1);
@@ -127,7 +128,61 @@
             font-size: 1.5rem;
             margin-right: 15px;
         }
-        
+
+        /* Depoimentos */
+        .depoimentos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .depoimento {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--dourado-liturgico);
+            width: 280px;
+            text-align: left;
+            font-style: italic;
+            position: relative;
+        }
+
+        .depoimento::before {
+            content: '“';
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            color: rgba(197, 160, 89, 0.3);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+
+        .depoimento-autor {
+            font-weight: 600;
+            color: var(--dourado-liturgico);
+            margin-top: 15px;
+            font-style: normal;
+        }
+
+        /* Checkout Banner */
+        #checkout-banner {
+            background: #081424;
+            border: 1px solid var(--dourado-liturgico);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.15);
+        }
+
+        #checkout-banner h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--dourado-liturgico);
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
         .footer {
             text-align: center;
             padding: 40px 20px;
@@ -136,6 +191,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- 
@@ -144,8 +200,10 @@
     -->
     <section class="hero">
         <h1>O Exército da Madrugada não pode recuar quando o sol nasce.</h1>
-        <p>Você recebeu a benção às 4h, mas sua casa continua protegida às 10h? Erga o Protocolo da Muralha: 21 dias para blindar sua família, fechar as brechas do desânimo e manter a paz do Rosário reinando no seu lar o dia inteiro.</p>
-        <a href="#checkout" class="cta-button">QUERO ERGUER MINHA MURALHA</a>
+        <p>Você recebeu a benção às 4h, mas sua casa continua protegida às 10h? Erga o Protocolo da Muralha: 21 dias
+            para blindar sua família, fechar as brechas do desânimo e manter a paz do Rosário reinando no seu lar o dia
+            inteiro.</p>
+        <a href="https://pay.kiwify.com.br/KROenH3" class="cta-button">QUERO ERGUER MINHA MURALHA</a>
     </section>
 
     <div class="container">
@@ -160,7 +218,12 @@
         -->
         <section class="section">
             <h2>A Dor da Brecha Aberta</h2>
-            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Você conhece essa sensação: O silêncio da madrugada, a voz do Frei Gilson, o terço nas mãos... você se sente invencível. Mas, poucas horas depois, o caos do mundo bate à porta. Uma briga boba com o cônjuge, a rebeldia dos filhos, o peso das dívidas ou aquela angústia que volta sem aviso. Por que a paz parece escorrer pelos dedos? <strong>Porque rezar sem vigiar é deixar a porta da sua fortaleza aberta.</strong> O inimigo não ataca enquanto você está no Rosário; ele espera você baixar a guarda durante o dia.</p>
+            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Você conhece essa sensação: O silêncio da
+                madrugada, a voz do Frei Gilson, o terço nas mãos... você se sente invencível. Mas, poucas horas depois,
+                o caos do mundo bate à porta. Uma briga boba com o cônjuge, a rebeldia dos filhos, o peso das dívidas ou
+                aquela angústia que volta sem aviso. Por que a paz parece escorrer pelos dedos? <strong>Porque rezar sem
+                    vigiar é deixar a porta da sua fortaleza aberta.</strong> O inimigo não ataca enquanto você está no
+                Rosário; ele espera você baixar a guarda durante o dia.</p>
         </section>
 
         <!-- 
@@ -172,26 +235,56 @@
             <div class="pilares">
                 <div class="pilar">
                     <h3>1. Diagnóstico das Invasões</h3>
-                    <p>Não é apenas desorganização, é brecha. Vamos identificar juntos quais hábitos, conversas e objetos na sua casa estão servindo de 'convite' para o desânimo e a discórdia.</p>
+                    <p>Não é apenas desorganização, é brecha. Vamos identificar juntos quais hábitos, conversas e
+                        objetos na sua casa estão servindo de 'convite' para o desânimo e a discórdia.</p>
                 </div>
                 <div class="pilar">
                     <h3>2. A Armadura do Soldado</h3>
-                    <p>Você não é um fiel isolado, você faz parte de um exército. Vamos implementar a disciplina dos escolhidos: como organizar seu trabalho e sua casa sob a ótica da vontade de Deus.</p>
+                    <p>Você não é um fiel isolado, você faz parte de um exército. Vamos implementar a disciplina dos
+                        escolhidos: como organizar seu trabalho e sua casa sob a ótica da vontade de Deus.</p>
                 </div>
                 <div class="pilar">
                     <h3>3. O Selo de Consagração</h3>
-                    <p>A etapa final. Como usar os sacramentais e a oração de autoridade para selar cada cômodo da sua casa, garantindo que o que é sagrado permaneça protegido.</p>
+                    <p>A etapa final. Como usar os sacramentais e a oração de autoridade para selar cada cômodo da sua
+                        casa, garantindo que o que é sagrado permaneça protegido.</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
             <h2>O Seu Arsenal de Combate</h2>
-             <ul class="arsenal-list">
-                <li><strong>21 Áudios de Comando:</strong> Instruções curtas para ouvir logo após a live ou ao começar o dia.</li>
-                <li><strong>O Guia do Sentinela (PDF):</strong> O mapa prático para aplicar as mudanças na sua casa hoje mesmo.</li>
-                <li><strong>BÔNUS: Áudios de Resgate (SOS da Muralha):</strong> Sentiu que a Muralha vai cair? Dê o play e recupere a paz em 3 minutos.</li>
+            <ul class="arsenal-list">
+                <li><strong>21 Áudios de Comando:</strong> Instruções curtas para ouvir logo após a live ou ao começar o
+                    dia.</li>
+                <li><strong>O Guia do Sentinela (PDF):</strong> O mapa prático para aplicar as mudanças na sua casa hoje
+                    mesmo.</li>
+                <li><strong>BÔNUS: Áudios de Resgate (SOS da Muralha):</strong> Sentiu que a Muralha vai cair? Dê o play
+                    e recupere a paz em 3 minutos.</li>
             </ul>
+        </section>
+
+        <!-- 
+            SEÇÃO DE DEPOIMENTOS (Provas Sociais)
+        -->
+        <section class="section">
+            <h2>Testemunhos da Muralha</h2>
+            <div class="depoimentos">
+                <div class="depoimento">
+                    <p>"Minha casa vivia em pé de guerra. Depois do Protocolo, passei a blindar nosso lar logo pela
+                        manhã. Meu marido notou a diferença na primeira semana. A paz voltou a reinar!"</p>
+                    <div class="depoimento-autor">— Maria Eduarda (Transformação Familiar)</div>
+                </div>
+                <div class="depoimento">
+                    <p>"Estávamos quase nos separando. Aplicar as orações e selar os cômodos quebrou o clima pesado. O
+                        terço diário salvou meu casamento das garras do inimigo."</p>
+                    <div class="depoimento-autor">— João Paulo & Ana (Restauração do Casamento)</div>
+                </div>
+                <div class="depoimento">
+                    <p>"A ansiedade da madrugada me consumia. Com os Áudios de Comando e o Guia, aprendi a ter
+                        autoridade sobre minha própria mente e não dar mais brechas ao medo."</p>
+                    <div class="depoimento-autor">— Silvia C. (Libertação da Ansiedade)</div>
+                </div>
+            </div>
         </section>
 
         <!-- 
@@ -199,9 +292,14 @@
             Objetivo: Fazer a chamada final para a compra, de forma clara e direta.
         -->
         <section class="section" id="checkout">
+            <div id="checkout-banner">
+                <h3>Acesso Imediato ao Protocolo</h3>
+                <p>Pagamento 100% seguro. Liberação automática após confirmação.</p>
+            </div>
             <h2>Junte-se aos que decidiram erguer a Muralha.</h2>
-            <p style="max-width: 600px; margin: 0 auto 30px auto;">Este não é um curso. É uma convocação. Por sua paz. Pela sua família. Por Deus.</p>
-            <a href="#" class="cta-button">SIM, QUERO BLINDAR MINHA FAMÍLIA AGORA</a>
+            <p style="max-width: 600px; margin: 0 auto 30px auto;">Este não é um curso. É uma convocação. Por sua paz.
+                Pela sua família. Por Deus.</p>
+            <a href="https://pay.kiwify.com.br/KROenH3" class="cta-button">SIM, QUERO BLINDAR MINHA FAMÍLIA AGORA</a>
         </section>
     </div>
 
@@ -211,4 +309,5 @@
     </footer>
 
 </body>
+
 </html>
