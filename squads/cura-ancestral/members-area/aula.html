@@ -162,7 +162,7 @@
 
     <nav class="navbar-aula">
         <a href="dashboard.html" class="btn-back">⬅ Voltar ao Painel</a>
-        <div style="font-weight: bold;">Módulo 1: Desafio Despensa Blindada</div>
+        <div id="module-title-nav" style="font-weight: bold;">Módulo 1: Desafio Despensa Blindada</div>
     </nav>
 
     <div class="layout-aula">
@@ -177,17 +177,17 @@
             </div>
 
             <div class="lesson-info">
-                <h1>Dia 2: O Despertar da Planta (Ativando o SAB)</h1>
+                <h1 id="lesson-main-title">Dia 2: O Despertar da Planta (Ativando o SAB)</h1>
                 <p>Nesta aula, você aprenderá a técnica exata para romper a inércia térmica e extrair o poder real das ervas na sua cozinha.</p>
                 
                 <div class="material-box">
                     <h3 style="margin-top: 0;">📚 Materiais de Apoio</h3>
                     <p>Baixe o seu Guia Visual do Dia 2 para imprimir e deixar na bancada da sua cozinha.</p>
-                    <a href="#" class="btn-download">⬇ BAIXAR GUIA DO DIA 2 (PDF)</a>
+                    <a href="#" id="download-link" class="btn-download">⬇ BAIXAR GUIA DO DIA 2 (PDF)</a>
                 </div>
 
                 <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
-                    <button style="background: #eee; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                    <button id="btn-complete" style="background: #eee; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">
                         ✅ Marcar aula como concluída
                     </button>
                 </div>
@@ -199,31 +199,84 @@
             <div class="sidebar-header">
                 <h3 style="margin: 0; font-size: 1.1em;">Aulas do Módulo</h3>
             </div>
-            <ul class="lesson-list">
-                <li class="lesson-item">
-                    <div class="status-icon done"></div>
-                    <div>Dia 1: Auditoria da Farmácia Caseira</div>
-                </li>
-                <li class="lesson-item active">
-                    <div class="status-icon"></div>
-                    <div>Dia 2: O Despertar da Planta</div>
-                </li>
-                <li class="lesson-item">
-                    <div class="status-icon"></div>
-                    <div>Dia 3: O Elixir do Estômago Blindado</div>
-                </li>
-                <li class="lesson-item">
-                    <div class="status-icon"></div>
-                    <div>Dia 4: O Protocolo das Juntas Livres</div>
-                </li>
-                <li class="lesson-item">
-                    <div class="status-icon"></div>
-                    <div>Dia 5: O Mapa da Independência</div>
-                </li>
+            <ul class="lesson-list" id="lesson-list">
+                <!-- Populado via JS -->
             </ul>
         </aside>
 
     </div>
 
+    <script>
+        const moduleData = {
+            "0": {
+                title: "Módulo 0: Boas-Vindas & Primeiros Passos",
+                lessons: ["O Início da sua Alforria", "Como navegar no portal", "Segurança em Primeiro Lugar", "Comunidade 'Cura em Família'"],
+                material: "manual-principal.html",
+                materialText: "⬇ BAIXAR MANUAL PRINCIPAL (HTML)"
+            },
+            "1": {
+                title: "Módulo 1: Desafio Despensa Blindada",
+                lessons: ["Dia 1: Auditoria da Farmácia", "Dia 2: O Despertar da Planta", "Dia 3: O Elixir do Estômago", "Dia 4: O Protocolo das Juntas", "Dia 5: O Mapa da Independência"],
+                material: "guia-dia-5-independencia.html",
+                materialText: "⬇ BAIXAR MAPA DA INDEPENDÊNCIA (HTML)"
+            },
+            "2": {
+                title: "Módulo 2: O Sistema SAB (Ciência)",
+                lessons: ["A Ciência do Calor", "Rompendo a Parede Celular", "Veículos Lipídicos", "O Arsenal de Cozinha"],
+                material: "codice-potencializacao.html",
+                materialText: "⬇ BAIXAR CÓDICE DE POTENCIALIZAÇÃO (HTML)"
+            },
+            "3": {
+                title: "Módulo 3: Protocolo V.I.T.A.L. (21 Dias)",
+                lessons: ["Fase 1: Vincular", "Fase 2: Incendiar", "Fase 3: Transmudar", "Fase 4: Alimentar", "Fase 5: Libertar"],
+                material: "mapa-consulta-rapida.html",
+                materialText: "⬇ BAIXAR MAPA DE CONSULTA RÁPIDA (HTML)"
+            },
+            "5": {
+                title: "Módulo Especial: O Cofre das Ervas Raras",
+                lessons: ["O Segredo das Plantas Mestras", "Regeneração Celular Avançada", "Limpeza de Depósitos Cálcicos"],
+                material: "cofre-ervas-raras.html",
+                materialText: "⬇ ACESSAR O COFRE (HTML)"
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const modId = urlParams.get('mod') || "0";
+        const currentMod = moduleData[modId] || moduleData["0"];
+
+        // Atualiza Títulos
+        document.getElementById('module-title-nav').textContent = currentMod.title;
+        document.getElementById('lesson-main-title').textContent = currentMod.lessons[0];
+        
+        // Atualiza Link de Download
+        const downloadLink = document.getElementById('download-link');
+        downloadLink.href = currentMod.material;
+        downloadLink.textContent = currentMod.materialText;
+
+        // Renderiza Lista de Aulas
+        const listContainer = document.getElementById('lesson-list');
+        currentMod.lessons.forEach((lesson, index) => {
+            const li = document.createElement('li');
+            li.className = `lesson-item ${index === 0 ? 'active' : ''}`;
+            
+            const isDone = localStorage.getItem(`lesson-${modId}-${index}`);
+            
+            li.innerHTML = `
+                <div class="status-icon ${isDone ? 'done' : ''}"></div>
+                <div>${lesson}</div>
+            `;
+            listContainer.appendChild(li);
+        });
+
+        // Lógica de Conclusão
+        const btnComplete = document.getElementById('btn-complete');
+        btnComplete.onclick = function() {
+            localStorage.setItem(`lesson-${modId}-0`, "true");
+            btnComplete.style.backgroundColor = "#2ecc71";
+            btnComplete.style.color = "white";
+            btnComplete.textContent = "✅ Aula Concluída!";
+            document.querySelector('.lesson-item.active .status-icon').classList.add('done');
+        };
+    </script>
 </body>
 </html>

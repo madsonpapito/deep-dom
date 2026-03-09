@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Consulta Rápida | Alvo da Saúde</title>
+    <style>
+        @media print { body { background: white; } .no-print { display: none; } }
+        :root { --verde-floresta: #2D5A27; --laranja-cta: #F28C28; --bege-claro: #F9F7F2; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #555; display: flex; justify-content: center; }
+        .page-a4 { background: white; width: 210mm; min-height: 297mm; padding: 20mm; box-shadow: 0 0 10px rgba(0,0,0,0.5); box-sizing: border-box; position: relative; margin: 20px; }
+        header { border-bottom: 3px solid var(--verde-floresta); padding-bottom: 10px; margin-bottom: 30px; }
+        h1 { font-family: Georgia, serif; color: var(--verde-floresta); font-size: 2em; text-align: center; }
+        .target-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .target-table th { background: var(--verde-floresta); color: white; padding: 12px; text-align: left; }
+        .target-table td { border: 1px solid #ddd; padding: 12px; font-size: 0.9em; }
+        .footer-note { font-size: 0.8em; color: #999; text-align: center; margin-top: 50px; border-top: 1px solid #eee; padding-top: 10px; }
+        .print-btn { position: fixed; bottom: 20px; right: 20px; background: var(--laranja-cta); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; }
+    </style>
+</head>
+<body>
+    <a href="javascript:window.print()" class="print-btn no-print">🖨️ IMPRIMIR PARA A GELADEIRA</a>
+    <div class="page-a4">
+        <header>
+            <div style="font-family: Georgia; color: var(--verde-floresta); font-weight: bold;">Mapa Tático SAB</div>
+        </header>
+        <h1>O Alvo da Saúde</h1>
+        <p style="text-align: center;">Guia de ação rápida para sintomas comuns.</p>
+
+        <table class="target-table">
+            <thead>
+                <tr>
+                    <th>Sintoma</th>
+                    <th>Ingrediente</th>
+                    <th>Ativação</th>
+                    <th>Dosagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Juntas Travadas</strong></td><td>Gengibre + Açafrão</td><td>7 min (Quente)</td><td>200ml (3x dia)</td></tr>
+                <tr><td><strong>Queimação</strong></td><td>Batata Doce (Suco)</td><td>Fria (Prensada)</td><td>50ml (Jejum)</td></tr>
+                <tr><td><strong>Pressão Oscilante</strong></td><td>Alho (Amassado)</td><td>10 min (Frio)</td><td>1 dente (Pós-almoço)</td></tr>
+                <tr><td><strong>Gases/Azia</strong></td><td>Erva-Doce + Louro</td><td>5 min (Abafado)</td><td>150ml (Pós-refeição)</td></tr>
+                <tr><td><strong>Insônia/Ansiedade</strong></td><td>Mulungu ou Alface</td><td>10 min (Fervura)</td><td>200ml (Noite)</td></tr>
+            </tbody>
+        </table>
+
+        <h3>O Termômetro Visual:</h3>
+        <ul>
+            <li><strong>80°C:</strong> Água Chiando (Folhas/Flores).</li>
+            <li><strong>100°C:</strong> Fervura Total (Raízes/Cascas).</li>
+        </ul>
+
+        <div style="background: #FFF9E6; border: 2px dashed #F1C40F; padding: 20px; border-radius: 8px; margin-top: 30px; text-align: center;">
+            <strong>Dica da Matriarca:</strong> "Fixe este mapa na porta da sua geladeira. A cura deve estar sempre ao alcance dos seus olhos."
+        </div>
+
+        <div class="footer-note">© 2026 Manual da Cura Ancestral - Consulta Rápida.</div>
+    </div>
+</body>
+</html>
