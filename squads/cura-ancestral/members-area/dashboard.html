@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Área de Cura | Manual da Cura Ancestral</title>
+    <style>
+        :root {
+            --verde-floresta: #2D5A27;
+            --verde-claro: #4A7C44;
+            --branco-crema: #F9F9F7;
+            --texto-cinza: #333333;
+            --laranja-cta: #F28C28;
+            --bege-suave: #F4F1EA;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bege-suave);
+            color: var(--texto-cinza);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--verde-floresta);
+        }
+
+        .navbar {
+            background-color: var(--verde-floresta);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .user-welcome {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .avatar-circle {
+            width: 40px;
+            height: 40px;
+            background-color: var(--branco-crema);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--verde-floresta);
+            font-weight: bold;
+        }
+
+        .main-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .welcome-hero {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            border-left: 8px solid var(--verde-floresta);
+        }
+
+        .progress-section {
+            margin: 20px 0;
+        }
+
+        .progress-bar-bg {
+            background: #e0e0e0;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-bar-fill {
+            background: var(--verde-floresta);
+            height: 100%;
+            width: 15%; /* Simulação de progresso */
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .module-img {
+            height: 160px;
+            background-color: var(--verde-floresta);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .module-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .module-tag {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--verde-claro);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .module-title {
+            font-size: 1.25em;
+            margin: 5px 0 15px 0;
+            min-height: 50px;
+        }
+
+        .btn-access {
+            display: block;
+            background-color: var(--verde-floresta);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn-access:hover {
+            background-color: var(--verde-claro);
+        }
+
+        .footer-area {
+            text-align: center;
+            padding: 50px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .community-cta {
+            background-color: #25D366; /* Cor do WhatsApp */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp {
+            background: white;
+            color: #25D366;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .module-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div style="font-family: Georgia; font-size: 1.2em; font-weight: bold;">🌿 Cura Ancestral</div>
+        <div class="user-welcome">
+            <span>Olá, <strong>Dirce Helena</strong></span>
+            <div class="avatar-circle">D</div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <section class="welcome-hero">
+            <h1>Bem-vinda de volta à sua jornada, Dirce!</h1>
+            <p style="font-size: 1.1em;">"A saúde é o silêncio dos órgãos." — Vamos continuar transformando sua despensa em sua maior aliada?</p>
+            
+            <div class="progress-section">
+                <span>Seu progresso total: <strong>15% concluído</strong></span>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <small>Você está na Fase 1: Vincular. Continue assim!</small>
+            </div>
+        </section>
+
+        <h2>📚 Seus Módulos de Estudo</h2>
+        
+        <div class="module-grid">
+            
+            <!-- Módulo 0 -->
+            <div class="module-card">
+                <div class="module-img">🏠</div>
+                <div class="module-content">
+                    <span class="module-tag">Comece por aqui</span>
+                    <h3 class="module-title">Boas-Vindas & Primeiros Passos</h3>
+                    <p style="font-size: 0.9em; color: #666;">Aprenda a navegar no portal e baixar seus manuais.</p>
+                    <a href="aula.html?mod=0" class="btn-access">ACESSAR AULAS</a>
+                </div>
+            </div>
+
+            <!-- Módulo 1 -->
+            <div class="module-card" style="border: 2px solid var(--verde-floresta);">
+                <div class="module-img" style="background-color: var(--verde-claro);">🛡️</div>
+                <div class="module-content">
+                    <span class="module-tag">Em andamento</span>
+                    <h3 class="module-title">Desafio Despensa Blindada (5 Dias)</h3>
+                    <p style="font-size: 0.9em; color: #666;">A técnica prática para alívio imediato na sua cozinha.</p>
+                    <a href="aula.html?mod=1" class="btn-access">CONTINUAR DESAFIO</a>
+                </div>
+            </div>
+
+            <!-- Módulo 2 -->
+            <div class="module-card">
+                <div class="module-img">🧪</div>
+                <div class="module-content">
+                    <span class="module-tag">Próximo Nível</span>
+                    <h3 class="module-title">O Sistema SAB (Ciência Bio-Molecular)</h3>
+                    <p style="font-size: 0.9em; color: #666;">A ciência por trás do estresse térmico controlado.</p>
+                    <a href="aula.html?mod=2" class="btn-access">VER CIÊNCIA</a>
+                </div>
+            </div>
+
+            <!-- Módulo 3 -->
+            <div class="module-card">
+                <div class="module-img">🌿</div>
+                <div class="module-content">
+                    <span class="module-tag">Jornada Principal</span>
+                    <h3 class="module-title">Protocolo V.I.T.A.L. (21 Dias)</h3>
+                    <p style="font-size: 0.9em; color: #666;">O passo a passo para sua total alforria farmacêutica.</p>
+                    <a href="aula.html?mod=3" class="btn-access">INICIAR PROTOCOLO</a>
+                </div>
+            </div>
+
+            <!-- Módulo 4 -->
+            <div class="module-card">
+                <div class="module-img">🎁</div>
+                <div class="module-content">
+                    <span class="module-tag">Presentes</span>
+                    <h3 class="module-title">Bônus & Materiais de Apoio</h3>
+                    <p style="font-size: 0.9em; color: #666;">Baixe seu manual principal e as tabelas de segurança.</p>
+                    <a href="aula.html?mod=4" class="btn-access">BAIXAR MATERIAIS</a>
+                </div>
+            </div>
+
+            <!-- Módulo Avançado -->
+            <div class="module-card">
+                <div class="module-img">💎</div>
+                <div class="module-content">
+                    <span class="module-tag">Conteúdo Especial</span>
+                    <h3 class="module-title">O Cofre das Ervas Raras</h3>
+                    <p style="font-size: 0.9em; color: #666;">Técnicas avançadas de regeneração metabólica.</p>
+                    <a href="aula.html?mod=5" class="btn-access">ACESSAR COFRE</a>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="community-cta">
+            <div>
+                <h3 style="color: white; margin: 0 0 5px 0;">Precisa de ajuda ou quer compartilhar um chá?</h3>
+                <p style="margin: 0;">Nossa comunidade no WhatsApp está esperando por você!</p>
+            </div>
+            <a href="#" class="btn-whatsapp">ENTRAR NO GRUPO</a>
+        </section>
+
+    </div>
+
+    <footer class="footer-area">
+        &copy; 2026 Manual da Cura Ancestral. Feito com carinho para sua saúde.<br>
+        <a href="#" style="color: #999; text-decoration: none;">Precisa de suporte técnico? Clique aqui.</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula | Manual da Cura Ancestral</title>
+    <style>
+        :root {
+            --verde-floresta: #2D5A27;
+            --verde-claro: #4A7C44;
+            --branco-crema: #F9F9F7;
+            --texto-cinza: #333333;
+            --laranja-cta: #F28C28;
+            --bege-suave: #F4F1EA;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bege-suave);
+            color: var(--texto-cinza);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--verde-floresta);
+        }
+
+        .navbar-aula {
+            background-color: var(--verde-floresta);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-back {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .layout-aula {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .video-area {
+            padding: 30px;
+            overflow-y: auto;
+            background: white;
+        }
+
+        .video-player {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .lesson-info {
+            max-width: 800px;
+        }
+
+        .sidebar-aulas {
+            background: #f9f9f9;
+            border-left: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .lesson-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lesson-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.2s;
+        }
+
+        .lesson-item:hover {
+            background: #f0f0f0;
+        }
+
+        .lesson-item.active {
+            background: #e8f5e9;
+            border-left: 4px solid var(--verde-floresta);
+        }
+
+        .status-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+        }
+
+        .status-icon.done {
+            background-color: #2ecc71;
+            border-color: #2ecc71;
+        }
+
+        .material-box {
+            background: var(--branco-crema);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px dashed var(--verde-floresta);
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: var(--verde-floresta);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .layout-aula { grid-template-columns: 1fr; }
+            .sidebar-aulas { display: none; } /* No mobile, escondemos a barra lateral por simplicidade inicial */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar-aula">
+        <a href="dashboard.html" class="btn-back">⬅ Voltar ao Painel</a>
+        <div style="font-weight: bold;">Módulo 1: Desafio Despensa Blindada</div>
+    </nav>
+
+    <div class="layout-aula">
+        
+        <!-- Área Principal da Aula -->
+        <main class="video-area">
+            <div class="video-player">
+                <div style="text-align: center;">
+                    <span style="font-size: 4em;">▶</span><br>
+                    Clique para iniciar o vídeo
+                </div>
+            </div>
+
+            <div class="lesson-info">
+                <h1>Dia 2: O Despertar da Planta (Ativando o SAB)</h1>
+                <p>Nesta aula, você aprenderá a técnica exata para romper a inércia térmica e extrair o poder real das ervas na sua cozinha.</p>
+                
+                <div class="material-box">
+                    <h3 style="margin-top: 0;">📚 Materiais de Apoio</h3>
+                    <p>Baixe o seu Guia Visual do Dia 2 para imprimir e deixar na bancada da sua cozinha.</p>
+                    <a href="#" class="btn-download">⬇ BAIXAR GUIA DO DIA 2 (PDF)</a>
+                </div>
+
+                <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+                    <button style="background: #eee; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                        ✅ Marcar aula como concluída
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Barra Lateral de Aulas -->
+        <aside class="sidebar-aulas">
+            <div class="sidebar-header">
+                <h3 style="margin: 0; font-size: 1.1em;">Aulas do Módulo</h3>
+            </div>
+            <ul class="lesson-list">
+                <li class="lesson-item">
+                    <div class="status-icon done"></div>
+                    <div>Dia 1: Auditoria da Farmácia Caseira</div>
+                </li>
+                <li class="lesson-item active">
+                    <div class="status-icon"></div>
+                    <div>Dia 2: O Despertar da Planta</div>
+                </li>
+                <li class="lesson-item">
+                    <div class="status-icon"></div>
+                    <div>Dia 3: O Elixir do Estômago Blindado</div>
+                </li>
+                <li class="lesson-item">
+                    <div class="status-icon"></div>
+                    <div>Dia 4: O Protocolo das Juntas Livres</div>
+                </li>
+                <li class="lesson-item">
+                    <div class="status-icon"></div>
+                    <div>Dia 5: O Mapa da Independência</div>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>

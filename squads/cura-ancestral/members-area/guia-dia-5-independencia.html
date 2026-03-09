@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Dia 5: O Mapa da Independência (21 Dias)</title>
+    <style>
+        @media print {
+            body { background: white; }
+            .no-print { display: none; }
+        }
+
+        :root {
+            --verde-floresta: #2D5A27;
+            --laranja-cta: #F28C28;
+            --bege-claro: #F9F7F2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-a4 {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        header {
+            border-bottom: 3px solid var(--verde-floresta);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .day-tag {
+            background: var(--verde-floresta);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 1.8em;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .day-box {
+            border: 2px solid #ddd;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .day-number {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .phase-label {
+            font-size: 0.6em;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Cores das Fases */
+        .phase-vincular { border-color: #81c784; background-color: #f1f8e9; }
+        .phase-incendiar { border-color: #ffb74d; background-color: #fff3e0; }
+        .phase-transmudar { border-color: #ba68c8; background-color: #f3e5f5; }
+        .phase-alimentar { border-color: #4fc3f7; background-color: #e1f5fe; }
+        .phase-libertar { border-color: var(--verde-floresta); background-color: #e8f5e9; }
+
+        .phase-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.8em;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend-color { width: 15px; height: 15px; border-radius: 3px; border: 1px solid #ddd; }
+
+        .daily-ritual-box {
+            background: var(--bege-claro);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed var(--verde-floresta);
+            margin-top: 20px;
+        }
+
+        .footer-note {
+            position: absolute;
+            bottom: 15mm;
+            left: 15mm;
+            right: 15mm;
+            font-size: 0.7em;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--laranja-cta);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:window.print()" class="print-btn no-print">🖨️ IMPRIMIR PARA A GELADEIRA</a>
+
+    <div class="page-a4">
+        <header>
+            <div class="logo-area">🌿 Cura Ancestral</div>
+            <div class="day-tag">MAPA V.I.T.A.L.</div>
+        </header>
+
+        <h1>Calendário da Minha Alforria (21 Dias)</h1>
+        <p style="text-align: center; font-size: 0.9em; margin-bottom: 20px;">Marque um ❤️ a cada dia concluído e celebre sua reconquista da saúde!</p>
+
+        <div class="phase-legend">
+            <div class="legend-item"><div class="legend-color phase-vincular"></div> Vincular</div>
+            <div class="legend-item"><div class="legend-color phase-incendiar"></div> Incendiar</div>
+            <div class="legend-item"><div class="legend-color phase-transmudar"></div> Transmudar</div>
+            <div class="legend-item"><div class="legend-color phase-alimentar"></div> Alimentar</div>
+            <div class="legend-item"><div class="legend-color phase-libertar"></div> Libertar</div>
+        </div>
+
+        <div class="calendar-grid">
+            <!-- Dias 1 a 21 -->
+            <div class="day-box phase-vincular"><span class="day-number">1</span><span class="phase-label">Elixir</span></div>
+            <div class="day-box phase-vincular"><span class="day-number">2</span><span class="phase-label">Elixir</span></div>
+            <div class="day-box phase-vincular"><span class="day-number">3</span><span class="phase-label">Elixir</span></div>
+            <div class="day-box phase-incendiar"><span class="day-number">4</span><span class="phase-label">🔥 SAB</span></div>
+            <div class="day-box phase-incendiar"><span class="day-number">5</span><span class="phase-label">🔥 SAB</span></div>
+            <div class="day-box phase-incendiar"><span class="day-number">6</span><span class="phase-label">🔥 SAB</span></div>
+            <div class="day-box phase-incendiar"><span class="day-number">7</span><span class="phase-label">🔥 SAB</span></div>
+            
+            <div class="day-box phase-transmudar"><span class="day-number">8</span><span class="phase-label">🧪 Óleos</span></div>
+            <div class="day-box phase-transmudar"><span class="day-number">9</span><span class="phase-label">🧪 Óleos</span></div>
+            <div class="day-box phase-transmudar"><span class="day-number">10</span><span class="phase-label">🧪 Óleos</span></div>
+            <div class="day-box phase-transmudar"><span class="day-number">11</span><span class="phase-label">🧪 Óleos</span></div>
+            <div class="day-box phase-transmudar"><span class="day-number">12</span><span class="phase-label">🧪 Óleos</span></div>
+            <div class="day-box phase-transmudar"><span class="day-number">13</span><span class="phase-label">🧪 Óleos</span></div>
+            <div class="day-box phase-transmudar"><span class="day-number">14</span><span class="phase-label">🧪 Óleos</span></div>
+
+            <div class="day-box phase-alimentar"><span class="day-number">15</span><span class="phase-label">🍽️ Janela</span></div>
+            <div class="day-box phase-alimentar"><span class="day-number">16</span><span class="phase-label">🍽️ Janela</span></div>
+            <div class="day-box phase-alimentar"><span class="day-number">17</span><span class="phase-label">🍽️ Janela</span></div>
+            <div class="day-box phase-alimentar"><span class="day-number">18</span><span class="phase-label">🍽️ Janela</span></div>
+            <div class="day-box phase-alimentar"><span class="day-number">19</span><span class="phase-label">🍽️ Janela</span></div>
+            <div class="day-box phase-alimentar"><span class="day-number">20</span><span class="phase-label">🍽️ Janela</span></div>
+            <div class="day-box phase-libertar" style="border-width: 4px;"><span class="day-number" style="color: var(--verde-floresta);">21</span><span class="phase-label">🕊️ ALFORRIA</span></div>
+        </div>
+
+        <div class="daily-ritual-box">
+            <h3 style="margin-top: 0;">📝 Regras de Ouro Diárias:</h3>
+            <ul style="padding-left: 20px; font-size: 0.9em;">
+                <li><strong>Respeite as 4 Horas:</strong> Janela entre SAB e remédios de farmácia.</li>
+                <li><strong>Água Solarizada:</strong> Beba 35ml por quilo de peso (ativada ao sol).</li>
+                <li><strong>Anotação Financeira:</strong> Quanto você economizou hoje na farmácia?</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center; font-style: italic; font-size: 0.9em; color: var(--verde-floresta);">
+            "Cada dia marcado é um passo para longe da doença e para perto da vida que você merece."
+        </div>
+
+        <div class="footer-note">
+            Mapa da Independência V.I.T.A.L. - Exclusivo para Alunos Manual da Cura Ancestral.
+        </div>
+    </div>
+
+</body>
+</html>

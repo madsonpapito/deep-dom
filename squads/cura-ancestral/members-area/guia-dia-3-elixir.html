@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Dia 3: O Elixir do Estômago Blindado</title>
+    <style>
+        @media print {
+            body { background: white; }
+            .no-print { display: none; }
+        }
+
+        :root {
+            --verde-floresta: #2D5A27;
+            --laranja-cta: #F28C28;
+            --amarelo-limao: #F1C40F;
+            --bege-claro: #F9F7F2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-a4 {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        header {
+            border-bottom: 3px solid var(--verde-floresta);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .day-tag {
+            background: var(--verde-floresta);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .elixir-formula {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--verde-floresta);
+        }
+
+        .ingredient-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.4em;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .prep-steps {
+            background: var(--bege-claro);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .prep-step {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .step-icon {
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+
+        .clock-box {
+            border: 2px solid var(--laranja-cta);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .footer-note {
+            position: absolute;
+            bottom: 20mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--laranja-cta);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:window.print()" class="print-btn no-print">🖨️ IMPRIMIR GUIA AGORA</a>
+
+    <div class="page-a4">
+        <header>
+            <div class="logo-area">🌿 Cura Ancestral</div>
+            <div class="day-tag">BLINDAGEM: DIA 3</div>
+        </header>
+
+        <h1>O Elixir do Estômago Blindado</h1>
+        <p>A âncora matinal do Sistema SAB para neutralizar a acidez e regenerar a mucosa gástrica.</p>
+
+        <div class="elixir-formula">
+            <div class="ingredient-circle">
+                <span style="font-size: 3em;">🥔</span><br>BATATA DOCE<br>(BRANCA)
+            </div>
+            <span>+</span>
+            <div class="ingredient-circle" style="border-color: var(--amarelo-limao);">
+                <span style="font-size: 3em;">🍋</span><br>MEIO<br>LIMÃO
+            </div>
+            <span>=</span>
+            <div class="ingredient-circle" style="border-color: var(--verde-floresta); background: #f0f4ef;">
+                <span style="font-size: 3em;">🛡️</span><br>ESCUDO<br>GÁSTRICO
+            </div>
+        </div>
+
+        <h3>Instruções de Preparo (Extração Fria SAB)</h3>
+        
+        <div class="prep-steps">
+            <div class="prep-step">
+                <div class="step-icon">🔪</div>
+                <div><strong>PASSO 1:</strong> Descasque meia batata doce branca e rale na parte mais fina do ralo.</div>
+            </div>
+            <div class="prep-step">
+                <div class="step-icon">🥤</div>
+                <div><strong>PASSO 2:</strong> Coloque a batata ralada em um pano de prato limpo e esprema com força sobre um copo até sair o "leite" da batata.</div>
+            </div>
+            <div class="prep-step">
+                <div class="step-icon">🍋</div>
+                <div><strong>PASSO 3:</strong> Adicione o suco de meio limão fresco diretamente sobre o líquido. O limão ativa os minerais da batata.</div>
+            </div>
+            <div class="prep-step">
+                <div class="step-icon">💧</div>
+                <div><strong>PASSO 4:</strong> Adicione 50ml de água em temperatura ambiente, misture e beba IMEDIATAMENTE.</div>
+            </div>
+        </div>
+
+        <div class="clock-box">
+            <span style="font-size: 3em;">⏰</span>
+            <div>
+                <strong>O RITUAL DO JEJUM:</strong><br>
+                Beba este elixir entre 06:30 e 08:00 da manhã, sempre em jejum. Aguarde 20 minutos antes de tomar café ou qualquer outro remédio. Deixe o "escudo" secar na parede do seu estômago.
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: #e8f5e9; border-radius: 8px;">
+            <p><strong>Dica da Matriarca:</strong> "Você sentirá um frescor descendo pelo esôfago. É a natureza apagando o fogo da inflamação. Repita todos os dias e sinta a liberdade de comer sem medo."</p>
+        </div>
+
+        <div class="footer-note">
+            Protocolo de Blindagem Gástrica - Manual da Cura Ancestral.
+        </div>
+    </div>
+
+</body>
+</html>

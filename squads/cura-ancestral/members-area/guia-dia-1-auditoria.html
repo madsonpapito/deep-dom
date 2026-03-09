@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Dia 1: Auditoria da Farmácia Caseira</title>
+    <style>
+        @media print {
+            body { background: white; }
+            .no-print { display: none; }
+        }
+
+        :root {
+            --verde-floresta: #2D5A27;
+            --verde-claro: #4A7C44;
+            --laranja-cta: #F28C28;
+            --texto: #333;
+            --bege-claro: #F9F7F2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-a4 {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        header {
+            border-bottom: 3px solid var(--verde-floresta);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .day-tag {
+            background: var(--verde-floresta);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--laranja-cta);
+            padding-left: 15px;
+        }
+
+        .audit-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .audit-table th {
+            background-color: var(--verde-floresta);
+            color: white;
+            text-align: left;
+            padding: 12px;
+        }
+
+        .audit-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .checkbox-row {
+            height: 30px;
+        }
+
+        .highlight-box {
+            background-color: var(--bege-claro);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px dashed var(--verde-claro);
+        }
+
+        .footer-note {
+            position: absolute;
+            bottom: 20mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .action-button-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--laranja-cta);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:window.print()" class="action-button-float no-print">🖨️ IMPRIMIR GUIA AGORA</a>
+
+    <div class="page-a4">
+        <header>
+            <div class="logo-area">🌿 Cura Ancestral</div>
+            <div class="day-tag">DESAFIO: DIA 1</div>
+        </header>
+
+        <h1>Auditoria da Farmácia Caseira</h1>
+        <p class="intro-text">"O primeiro passo para a cura é reconhecer o que está roubando sua vitalidade silenciosamente."</p>
+
+        <h3>1. O Inventário da Dependência</h3>
+        <p>Preencha a tabela abaixo com os remédios que você usa hoje para dores e estômago. Seja honesta consigo mesma.</p>
+
+        <table class="audit-table">
+            <thead>
+                <tr>
+                    <th>Nome do Remédio</th>
+                    <th>Para que serve?</th>
+                    <th>Custo Mensal (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ex: Omeprazol</td><td>Queimação</td><td>R$ 45,00</td></tr>
+                <tr class="checkbox-row"><td></td><td></td><td></td></tr>
+                <tr class="checkbox-row"><td></td><td></td><td></td></tr>
+                <tr class="checkbox-row"><td></td><td></td><td></td></tr>
+                <tr class="checkbox-row"><td></td><td></td><td></td></tr>
+                <tr style="background: #f9f9f9; font-weight: bold;">
+                    <td colspan="2" style="text-align: right;">INVESTIMENTO TOTAL MENSAL:</td>
+                    <td>R$ ________</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box">
+            <strong>Reflexão da Matriarca:</strong> Se você pudesse reduzir esse valor pela metade em 21 dias e usar esse dinheiro para viajar ou presentear seus netos... O que você faria?
+        </div>
+
+        <h3>2. O Alvo da Saúde</h3>
+        <p>Circule abaixo qual o principal incômodo que você quer ELIMINAR nesta jornada:</p>
+        
+        <div style="display: flex; justify-content: space-around; margin: 30px 0;">
+            <div style="text-align: center; border: 2px solid #eee; padding: 15px; border-radius: 10px; width: 120px;">
+                <span style="font-size: 2em;">🔥</span><br>Queimação
+            </div>
+            <div style="text-align: center; border: 2px solid #eee; padding: 15px; border-radius: 10px; width: 120px;">
+                <span style="font-size: 2em;">🦵</span><br>Dores Juntas
+            </div>
+            <div style="text-align: center; border: 2px solid #eee; padding: 15px; border-radius: 10px; width: 120px;">
+                <span style="font-size: 2em;">😴</span><br>Insônia
+            </div>
+            <div style="text-align: center; border: 2px solid #eee; padding: 15px; border-radius: 10px; width: 120px;">
+                <span style="font-size: 2em;">🎈</span><br>Gases
+            </div>
+        </div>
+
+        <h3>3. Compromisso de Alforria</h3>
+        <p>Eu, ________________________________________________, comprometo-me a seguir os 5 dias deste desafio para resgatar a autonomia da minha saúde.</p>
+        
+        <div style="margin-top: 40px; text-align: center;">
+            ________________________________________________<br>
+            <small>Assinatura da Futura Matriarca</small>
+        </div>
+
+        <div class="footer-note">
+            Manual da Cura Ancestral - Material Exclusivo para Alunos. Proibida a reprodução.
+        </div>
+    </div>
+
+</body>
+</html>

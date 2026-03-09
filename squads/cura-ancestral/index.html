@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Especial: O Segredo da Sinergia Herbal</title>
+    <style>
+        :root {
+            --verde-floresta: #2D5A27;
+            --verde-claro: #4A7C44;
+            --branco-crema: #F9F9F7;
+            --texto-cinza: #333333;
+            --laranja-cta: #F28C28;
+            --borda-suave: #E0E0E0;
+            --azul-facebook: #4267B2;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--branco-crema);
+            color: var(--texto-cinza);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--verde-floresta);
+            line-height: 1.3;
+        }
+
+        .top-urgency {
+            background-color: var(--verde-floresta);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.85em;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.03);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            border-bottom: 2px double var(--borda-suave);
+            margin-bottom: 40px;
+        }
+
+        .category-tag {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #888;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+        }
+
+        .headline {
+            font-size: 2.4em;
+            margin: 15px 0;
+        }
+
+        .subheadline {
+            font-size: 1.2em;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .author-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .author-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .vsl-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 8px;
+            margin: 30px 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .vsl-placeholder::after {
+            content: '▶';
+            font-size: 4em;
+            opacity: 0.8;
+        }
+
+        .content-body p {
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        .highlight-quote {
+            background-color: #f0f4ef;
+            border-left: 5px solid var(--verde-floresta);
+            padding: 30px;
+            margin: 40px 0;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        .step-box {
+            background: var(--branco-crema);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px solid var(--borda-suave);
+        }
+
+        .step-box h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .offer-card {
+            background: #fff;
+            border: 3px solid var(--verde-floresta);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .offer-card h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .badge-exclusive {
+            background-color: #C0392B;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+        }
+
+        .value-stack {
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #ddd;
+            padding: 10px 0;
+        }
+
+        .price-highlight {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: var(--verde-floresta);
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            display: block;
+            background-color: var(--laranja-cta);
+            color: white;
+            text-decoration: none;
+            padding: 25px 40px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(242, 140, 40, 0.4);
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(242, 140, 40, 0.5);
+        }
+
+        .social-proof {
+            margin-top: 60px;
+            border-top: 1px solid var(--borda-suave);
+            padding-top: 40px;
+        }
+
+        .comment-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .comment-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #eee;
+        }
+
+        .comment-content {
+            background-color: #f1f2f6;
+            padding: 15px;
+            border-radius: 12px;
+            flex: 1;
+        }
+
+        .comment-name {
+            font-weight: bold;
+            color: var(--azul-facebook);
+            margin-bottom: 5px;
+        }
+
+        .comment-actions {
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 8px;
+            margin-left: 65px;
+        }
+
+        .guarantee-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #fdfdfd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #eee;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 0.8em;
+            color: #999;
+            background-color: white;
+        }
+
+        @media (max-width: 600px) {
+            .headline { font-size: 1.8em; }
+            .container { padding: 15px; }
+            .offer-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-urgency">
+        ⚠️ ATENÇÃO: Desconto Especial de Lançamento Ativo — Expira Hoje!
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="category-tag">Saúde & Bem-Estar | Relatório Especial</div>
+            <h1 class="headline">Eu testei o "Protocolo V.I.T.A.L." por 30 dias — Aqui está como economizei R$ 240 na farmácia usando apenas temperos.</h1>
+            <p class="subheadline">Descubra como o Sistema de Ativação Bio-Molecular (SAB) está devolvendo a autonomia para milhares de pessoas acima dos 60 anos.</p>
+            
+            <div class="author-box">
+                <div class="author-img"></div>
+                <div>Por <strong>Dirce Helena</strong> | Professora Aposentada & Matriarca da Cura</div>
+            </div>
+
+            <!-- VSL Placeholder -->
+            <div class="vsl-placeholder">
+                <p style="position: absolute; bottom: 20px; font-weight: bold;">(ASSISTA O VÍDEO COMPLETO)</p>
+            </div>
+        </header>
+
+        <section class="content-body">
+            <p>Você já sentiu que está <strong>"alugando"</strong> sua saúde?</p>
+
+            <p>Acorda, toma um anti-inflamatório para a dor no joelho. Duas horas depois, precisa de um protetor gástrico porque o estômago começou a queimar. À noite, um relaxante muscular para conseguir dormir.</p>
+
+            <p>Essa era a minha rotina aos 64 anos. Eu me sentia uma escrava da indústria farmacêutica. Mas tudo mudou quando descobri o que os antigos chamavam de <strong>"Sinergia Herbal"</strong>.</p>
+
+            <div class="highlight-quote">
+                "Não se trata apenas de tomar um chá de hortelã. É sobre destravar o poder oculto que a indústria não quer que você conheça."
+            </div>
+
+            <h2>O Grande Erro da "Inércia Térmica"</h2>
+            <p>A ciência moderna agora valida o que nossos avós sabiam: quando você combina os ativos certos (como o Gingerol do gengibre com a Alicina do alho) no ponto exato de calor, você cria um composto ultra-potente.</p>
+
+            <p>O problema é que apenas jogar água quente em uma folha não funciona. Isso é o que chamamos de <strong>Inércia Térmica</strong> — o nutriente fica preso no bagaço e vai para o lixo.</p>
+
+            <div class="step-box">
+                <h3><span>🌿</span> O Sistema SAB de Ativação</h3>
+                <p>O Sistema de Ativação Bio-Molecular (SAB) é a chave para romper a parede celular da planta e liberar os ativos reais diretamente para o seu sangue, garantindo até 500% mais absorção.</p>
+            </div>
+
+            <h2>Minha Jornada de 21 Dias</h2>
+            <p>Com o <strong>Protocolo V.I.T.A.L.</strong>, eu segui 5 fases simples que limparam meu organismo e devolveram minha mobilidade. Hoje, volto a brincar com meus netos sem a sombra da dor.</p>
+
+            <div class="offer-card" id="oferta">
+                <div class="badge-exclusive">OFERTA ÚNICA & EXCLUSIVA</div>
+                <h2>Acesso Vitalício ao Manual da Cura Ancestral</h2>
+                <p>Receba o sistema completo para transformar sua despensa em uma farmácia natural.</p>
+
+                <div class="value-stack">
+                    <div class="value-item"><span>Manual da Cura Ancestral</span> <strong>R$ 297,00</strong></div>
+                    <div class="value-item"><span>🎁 BÔNUS: Guia 'Mercado de Ouro'</span> <strong>GRÁTIS</strong></div>
+                    <div class="value-item"><span>🎁 BÔNUS: Protocolo Faxina Hepática</span> <strong>GRÁTIS</strong></div>
+                    <div class="value-item"><span>🎁 BÔNUS: Masterclass Cozinha Alquímica</span> <strong>GRÁTIS</strong></div>
+                    <div class="value-item"><span>🎁 BÔNUS: Comunidade VIP</span> <strong>GRÁTIS</strong></div>
+                </div>
+
+                <p style="text-decoration: line-through; color: #999;">De R$ 1.205,00</p>
+                <div class="price-highlight">12x de R$ 14,67</div>
+                <p>ou R$ 147,00 à vista no PIX</p>
+
+                <a href="checkout.html" class="cta-button">QUERO MINHA LIBERDADE AGORA ➱</a>
+
+                <div class="guarantee-box">
+                    <img src="https://img.icons8.com/color/96/guarantee.png" width="60" alt="Garantia">
+                    <div style="text-align: left;">
+                        <strong>Garantia Blindada de 30 Dias</strong><br>
+                        <small>Se em 30 dias suas dores não diminuírem ou você não economizar na farmácia, eu devolvo 100% do seu dinheiro.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-proof">
+                <h3>Comentários da Comunidade (1.248)</h3>
+                
+                <div class="comment-box">
+                    <div class="comment-avatar"></div>
+                    <div class="comment-content">
+                        <div class="comment-name">Maria Auxiliadora S.</div>
+                        <div>Gente, eu estava gastando quase 300 reais por mês com protetor gástrico. Com 4 dias do Elixir de Batata Doce eu já não sinto mais queimação. Valeu cada centavo! 🙏</div>
+                    </div>
+                </div>
+                <div class="comment-actions">Curtir · Responder · 4 min</div>
+
+                <div class="comment-box">
+                    <div class="comment-avatar"></div>
+                    <div class="comment-content">
+                        <div class="comment-name">João Carlos Oliveira</div>
+                        <div>O Protocolo das Juntas Livres é sensacional. Voltei a caminhar de manhã sem aquele joelho travado. A Dirce Helena salvou minha aposentadoria!</div>
+                    </div>
+                </div>
+                <div class="comment-actions">Curtir · Responder · 12 min</div>
+
+                <div class="comment-box" style="margin-left: 50px;">
+                    <div class="comment-avatar"></div>
+                    <div class="comment-content">
+                        <div class="comment-name">Tereza Cristina</div>
+                        <div>João, você também usou a técnica da compressa com óleo de coco? Pra mim foi o que mais funcionou!</div>
+                    </div>
+                </div>
+                <div class="comment-actions" style="margin-left: 115px;">Curtir · Responder · 2 min</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>Manual da Cura Ancestral &copy; 2026</strong></p>
+        <p>Políticas de Privacidade | Termos de Uso | Contato</p>
+        <p style="max-width: 600px; margin: 20px auto; opacity: 0.6;">
+            Aviso: Os resultados podem variar de pessoa para pessoa. As informações contidas neste site não substituem o aconselhamento médico profissional. Sempre consulte seu médico antes de iniciar qualquer tratamento natural.
+        </p>
+    </footer>
+
+</body>
+</html>

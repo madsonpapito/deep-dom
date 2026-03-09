@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Dia 2: O Despertar da Planta (Sistema SAB)</title>
+    <style>
+        @media print {
+            body { background: white; }
+            .no-print { display: none; }
+        }
+
+        :root {
+            --verde-floresta: #2D5A27;
+            --verde-claro: #4A7C44;
+            --laranja-cta: #F28C28;
+            --azul-agua: #2980B9;
+            --bege-claro: #F9F7F2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-a4 {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        header {
+            border-bottom: 3px solid var(--verde-floresta);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .day-tag {
+            background: var(--verde-floresta);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: var(--verde-floresta);
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .thermo-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            gap: 20px;
+        }
+
+        .thermo-box {
+            flex: 1;
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .thermo-box.highlight {
+            border-color: var(--verde-floresta);
+            background-color: #f0f4ef;
+        }
+
+        .temp-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid var(--azul-agua);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin: 0 auto 15px auto;
+            color: var(--azul-agua);
+        }
+
+        .step-list {
+            margin: 30px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--bege-claro);
+            border-radius: 8px;
+        }
+
+        .step-number {
+            background: var(--verde-floresta);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .bubble-visual {
+            width: 100%;
+            height: 100px;
+            background: #e3f2fd;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .footer-note {
+            position: absolute;
+            bottom: 20mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .no-print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--laranja-cta);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:window.print()" class="no-print-btn no-print">🖨️ IMPRIMIR GUIA AGORA</a>
+
+    <div class="page-a4">
+        <header>
+            <div class="logo-area">🌿 Cura Ancestral</div>
+            <div class="day-tag">TÉCNICA SAB: DIA 2</div>
+        </header>
+
+        <h1>O Despertar da Planta</h1>
+        <p>Aprenda a ouvir a água e identificar o ponto exato de ativação dos ativos naturais.</p>
+
+        <h3>1. O Termômetro da Matriarca (Sem Equipamentos)</h3>
+        <p>Siga o visual das bolhas para não "queimar" o remédio:</p>
+
+        <div class="thermo-container">
+            <div class="thermo-box highlight">
+                <div class="temp-circle" style="border-color: #4db6ac; color: #00897b;">80°C</div>
+                <strong>O CHIADO</strong>
+                <p style="font-size: 0.85em;">Bolhas pequenas (olho de peixe). Som de chiado constante.</p>
+                <div style="color: #00897b; font-weight: bold; font-size: 0.8em;">FOLHAS E FLORES</div>
+            </div>
+            <div class="thermo-box">
+                <div class="temp-circle" style="border-color: #fb8c00; color: #ef6c00;">90°C</div>
+                <strong>A SUBIDA</strong>
+                <p style="font-size: 0.85em;">Bolhas médias subindo rápido. Vapor intenso.</p>
+                <div style="color: #ef6c00; font-weight: bold; font-size: 0.8em;">SEMENTES</div>
+            </div>
+            <div class="thermo-box">
+                <div class="temp-circle" style="border-color: #e53935; color: #c62828;">100°C</div>
+                <strong>A FERVURA</strong>
+                <p style="font-size: 0.85em;">Bolhas grandes "pulando". Agitação total.</p>
+                <div style="color: #c62828; font-weight: bold; font-size: 0.8em;">RAÍZES E CASCAS</div>
+            </div>
+        </div>
+
+        <h3>2. Ritual Prático de Infusão Ativada</h3>
+        
+        <div class="step-list">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>O ACORDE:</strong> Amasse as ervas levemente com os dedos antes de colocar no pote. Isso "avisa" a planta que ela será ativada.
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>O CHOQUE:</strong> Despeje a água no ponto do "Chiado" (80°C) sobre as folhas frescas.
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>O ABAFAMENTO:</strong> Cubra com um pires IMEDIATAMENTE. Não deixe o vapor fugir (ali estão os óleos essenciais).
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <div>
+                    <strong>O TEMPO DA TERRA:</strong> Aguarde 4 minutos. Nem mais, nem menos. Coe e beba em pequenos goles.
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #fff3e0; border-left: 5px solid #fb8c00; padding: 15px; margin-top: 20px;">
+            <strong>⚠️ AVISO DE SEGURANÇA:</strong> Nunca use recipientes de plástico ou alumínio para fazer sua infusão. Use sempre Vidro, Cerâmica ou Inox.
+        </div>
+
+        <div class="footer-note">
+            Sistema SAB (Ativação Bio-Molecular) - Técnica Exclusiva Manual da Cura Ancestral.
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+name: cura-ancestral
+version: 1.0.0
+description: "Squad focado no desenvolvimento do infoproduto Manual da Cura Ancestral, focado em medicina natural e economia farmacêutica."
+author: "Orion @aios-master"
+license: MIT
+slashPrefix: cura-ancestral
+
+aios:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  agents: []
+  tasks:
+    - escrever-copy-advertorial.md
+    - criar-mockups-3d.md
+    - estruturar-lp-textual-e-imagens.md
+    - configurar-checkout-e-pixel.md
+    - preparar-materiais-bonus-pdf.md
+    - criar-comentarios-social-proof.md
+  workflows: []
+  checklists: []
+  templates: []
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node: []
+  python: []
+  squads: []
+
+tags:
+  - cura-ancestral
+  - herbalismo
+  - infoproduto
+  - saude-natural
