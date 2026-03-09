@@ -1,0 +1,175 @@
+# Target Keywords para Meta Ad Library (Versão Melhorada - DR Focus 2026)
+# Use no Apify Facebook Ads Library Scraper
+# Dica: quanto mais específica a combinação, mais anúncios de oferta real você pega
+
+# Saúde & Bem-estar
+emagrecer
+perder peso
+dieta
+diabetes
+pressão alta
+colesterol
+dor nas costas
+dor no joelho
+ansiedade
+insônia
+memória
+concentração
+
+truque para emagrecer
+ritual para emagrecer
+quizz emagrecer
+quiz emagrecimento
+segredo para perder peso
+método emagrecer
+fórmula emagrecer
+emagrecer 9,90
+emagrecer 19,90
+emagrecer 27
+perder peso 9,90
+emagrecer em 7 dias
+emagrecer em 30 dias
+emagrecer sem dieta
+emagrecer natural
+emagrecer rápido
+dieta milagrosa
+reverter diabetes
+acabar com ansiedade
+melhorar sono rápido
+
+# Beleza
+cabelo
+calvície
+queda de cabelo
+pele
+rugas
+rejuvenescimento
+unhas
+
+truque para cabelo crescer
+ritual cabelo
+quizz calvície
+segredo calvície
+método calvície
+queda de cabelo acabou
+cabelo crescer 9,90
+tratamento calvície 19,90
+anti-rugas natural
+rejuvenescimento 9,90
+rugas desaparecem
+pele perfeita truque
+unhas fortes método
+cabelo crescer rápido
+antes e depois cabelo
+
+# Relacionamentos
+relacionamento
+reconquistar
+ex de volta
+casamento
+libido
+desempenho sexual
+
+truque reconquistar ex
+ritual para reconquistar
+quizz relacionamento
+segredo reconquistar
+ex de volta método
+método voltar com ex
+libido 9,90
+desempenho sexual poderoso
+melhorar libido rápido
+reconquistar em 7 dias
+voltar com ex garantido
+ritual do amor
+casamento salvo
+
+# Finanças
+renda extra
+ganhar dinheiro
+investimento
+trader
+day trade
+afiliado
+marketing digital
+
+renda extra 9,90
+renda extra 19,90
+ganhar dinheiro online
+ganhar 5 mil por mês
+método trader iniciante
+day trade 9,90
+segredo afiliado
+afiliado 2026
+marketing digital 27
+investir do zero
+renda extra em casa
+quizz renda extra
+fórmula ganhar dinheiro
+renda extra rápido
+
+# Educação & Carreira
+concurso público
+inglês
+programação
+certificação
+oab
+
+concurso público 2026
+passar em concurso
+inglês em 30 dias
+inglês rápido 9,90
+programação do zero
+curso programação 19,90
+passar na OAB método
+aprovado concurso truque
+oab 2026
+certificação rápida
+inglês fluente em 3 meses
+
+# Pet
+cachorro
+adestramento
+
+adestramento cachorro
+adestrar cachorro rápido
+truque adestramento
+método adestramento
+adestramento 9,90
+cachorro parar de latir
+adestrar em 7 dias
+ritual adestramento
+quizz cachorro
+
+# Gatilhos DR Gerais (use sozinho ou combine com as de cima – pega ofertas de todos os nichos)
+truque
+ritual
+quizz
+quiz
+segredo
+método
+fórmula
+9,90
+19,90
+27
+47
+67
+97
+por apenas
+em 7 dias
+em 30 dias
+em 60 dias
+passo a passo
+que funciona
+natural
+caseiro
+sem remédio
+resultado rápido
+antes e depois
+garantido
+garantia incondicional
+reembolso
+milagre
+revolucionário
+limitado
+hoje apenas

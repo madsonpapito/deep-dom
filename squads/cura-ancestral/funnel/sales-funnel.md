@@ -1,27 +1,48 @@
-# Estratégia de Funil de Vendas: Cura Ancestral
+# Estratégia de Funil de Vendas: Cura Ancestral (Integrado Lastlink)
 
-Este documento detalha o fluxo de vendas completo para o infoproduto Manual da Cura Ancestral, visando maximizar o LTV (Lifetime Value) e a satisfação do cliente.
+Este documento detalha o fluxo de vendas completo para o infoproduto **Manual da Cura Ancestral**, atualizado com a estrutura de páginas e integração Lastlink.
 
-## 🛒 Produto Principal: Manual da Cura Ancestral
+## 🛒 Produto Principal: Manual da Cura Ancestral (`index.html`)
 - **Preço**: R$ 147,00 (ou 12x de R$ 14,67).
-- **Entregáveis**: Acesso completo ao sistema SAB + Protocolo V.I.T.A.L. + Garantia de 7 dias.
+- **Entregáveis**: Manual Principal SAB + Bônus (Faxina Hepática, Mercado de Ouro, Cozinha Alquímica e Comunidade VIP).
+- **Checkout**: `https://lastlink.com/p/CE3FF59AF/checkout-payment`
 
-## 📦 Order Bumps (No Checkout)
-1. **Códice da Potencialização Máxima** (R$ 47,00): Guia avançado de técnicas de extração e conservação para potencializar os efeitos das ervas em até 500%.
-2. **Escudo de Interações Erva-Fármaco** (R$ 47,00): Guia prático de segurança que ensina a combinar remédios naturais com medicamentos de farmácia sem riscos.
-3. **Mapa de Consulta Rápida: O Alvo da Saúde** (R$ 47,00): Guia visual e prático para identificação imediata de ervas e dosagens sem precisar folhear o manual completo.
+---
 
-## 🚀 Upsells (Fluxo Pós-Compra)
-- **Upsell 1: O Cofre das Ervas Raras (R$ 197,00)**: Extensão avançada do Manual com foco em regeneração e reversão de danos metabólicos profundos.
-- **Upsell 2: O Círculo Secreto dos Mestres da Sinergia (R$ 297,00)**: Acesso exclusivo ao grupo de elite para suporte, troca de receitas e mentorias mensais ao vivo com especialistas.
+## 🚀 Fluxo de Upsells & Downsells (One-Click Buy)
 
-## 📉 Downsells (Recuperação de Vendas)
-- **Downsell 1: Guia Digital de Farmácia na Cozinha (R$ 47,00)**: Versão e-book de alta resolução focada em sinergia herbácea para leitura em dispositivos móveis.
-- **Downsell 2: Protocolo SOS: Alívio Imediato das Dores Articulares (R$ 47,00)**: Guia prático focado exclusivamente no combate a dores crônicas, artrite e artrose com ingredientes de cozinha.
+### 1. Upsell 1: O Cofre das Ervas Raras (`upsell-1.html`)
+- **Oferta**: Protocolo de regeneração avançada para reversão de danos metabólicos profundos.
+- **Preço**: R$ 197,00.
+- **Fluxo**:
+    - **SIM**: Direciona para `upsell-2.html`.
+    - **NÃO**: Direciona para `downsell-1.html`.
 
-## 🧪 Gatilhos & Prova Social
-- **A Janela de Erosão Gástrica**: "Cada dia que você adia a transição para a cura natural é um dia a mais que os anti-inflamatórios corroem sua mucosa estomachada em até 12%."
-- **Prova Social**:
-    - **Dona Maria, 67**: Reduziu protetor gástrico em 4 dias.
-    - **Seu João, 72**: Voltou a caminhar sem joelho "travado" com compressas ancestrais.
-    - **1.200 alunos**: Relataram economia média de R$ 200/mês na farmácia.
+### 2. Downsell 1: Protocolo SOS: Alívio Imediato (`downsell-1.html`)
+- **Oferta**: Plano de emergência para dores agudas, artrite e artrose.
+- **Preço**: R$ 47,00.
+- **Fluxo**:
+    - **SIM/NÃO**: Direciona para `upsell-2.html`.
+
+### 3. Upsell 2: Círculo Secreto dos Mestres (`upsell-2.html`)
+- **Oferta**: Acesso anual à comunidade VIP com lives mensais de tira-dúvidas.
+- **Preço**: R$ 297,00 (Anual) ou 12x R$ 29,70.
+- **Fluxo**:
+    - **SIM**: Direciona para a Área de Membros (`dashboardV2`).
+    - **NÃO**: Direciona para `downsell-2.html`.
+
+### 4. Downsell 2: Guia Farmácia na Cozinha (`downsell-2.html`)
+- **Oferta**: Guia de consulta rápida para substituições naturais do dia a dia.
+- **Preço**: R$ 27,00.
+- **Fluxo**:
+    - **SIM/NÃO**: Direciona para a Área de Membros (`dashboardV2`).
+
+---
+
+## 🔗 Estrutura de Redirecionamento Final
+- **Destino**: `https://lastlink.com/app/member/dashboardV2`
+
+## 🧪 Gatilhos & Prova Social (Implementados)
+- **A Janela de Erosão Gástrica**: Alerta no topo das páginas sobre o custo da espera.
+- **Sinergia Térmico-Enzimática (SAB)**: O mecanismo único que diferencia o produto.
+- **Garantia 'Ou você cura ou eu pago'**: 30 dias de teste com risco zero para o cliente.

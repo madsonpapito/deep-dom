@@ -1,0 +1,30 @@
+# Checkout Platform URLs
+# URLs de checkout das principais plataformas de infoprodutos brasileiras
+# Usadas para engenharia reversa de tráfego (top referrals via SimilarWeb/Semrush)
+# Formato: uma URL por linha
+
+# Hotmart
+pay.hotmart.com
+hotmart.com/checkout
+
+# Kiwify
+checkout.kiwify.com.br
+pay.kiwify.com.br
+
+# PerfectPay
+go.perfectpay.com.br
+
+# Braip
+checkout.braip.com
+
+# Eduzz
+sun.eduzz.com
+
+# Monetizze
+pay.monetizze.com.br
+
+# Ticto
+pay.ticto.com.br
+
+# Pepper (antiga Hotmart internacional)
+pepper.com.br/checkout

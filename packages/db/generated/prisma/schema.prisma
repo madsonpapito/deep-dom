@@ -1,0 +1,101 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 1. Modelos de Autenticação (Next-Auth) - Mantidos para compatibilidade
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// 2. Modelos da Aplicação Renova 30
+
+// O modelo User é estendido para ter uma relação com UserProfile
+model User {
+  id            String       @id @default(cuid())
+  name          String?
+  email         String?      @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  profile       UserProfile? // Relação 1-para-1 com UserProfile
+}
+
+// Perfil da usuária com dados específicos da aplicação
+model UserProfile {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fullName    String?
+  quizAnswers Json?
+  currentWeek Int      @default(1)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Treino individual (vídeo)
+model Workout {
+  id        String        @id @default(cuid())
+  title     String
+  videoUrl  String
+  level     String // "Iniciante", "Intermediário", "Avançado"
+  focus     String // "Barriga Plana", etc.
+  weeks     ProgramWeek[] @relation("ProgramWeekToWorkout")
+  createdAt DateTime      @default(now())
+}
+
+// Semana do programa que agrupa vários treinos
+model ProgramWeek {
+  id          String    @id @default(cuid())
+  weekNumber  Int       @unique
+  title       String
+  description String?
+  workouts    Workout[] @relation("ProgramWeekToWorkout")
+  createdAt   DateTime  @default(now())
+}
+
+// Material bônus (PDF, Áudio)
+model Bonus {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  fileUrl     String
+  type        String // "PDF", "Audio"
+  createdAt   DateTime @default(now())
+}

@@ -1,0 +1,50 @@
+
+=======================================================
+  CAMPANHA: SCALE (28/02 - 03/03)
+=======================================================
+
+--- POR CRIATIVO ---
+      Ad  Spend  Imprs  Clicks  Sales   CTR   CPA
+AG7-IMG3 221.86   2358     286   11.0 12.13 20.17
+    ANG8  49.07    719      54    1.0  7.51 49.07
+AG7-AD20  18.37    205      23    0.0 11.22  0.00
+AG0-AD20  10.84    103      21    0.0 20.39  0.00
+   IMG54   3.10     40       2    0.0  5.00  0.00
+    ANG7   1.13     22       0    0.0  0.00  0.00
+    AD22   0.10      1       0    0.0  0.00  0.00
+    AD41   0.02      1       0    0.0  0.00  0.00
+   ANG12   0.00      0       0    0.0  0.00  0.00
+
+  TOTAIS: Gasto=$304.49 | Clicks=386 | CTR=11.19% | Vendas=12 | CPA=$25.37
+
+  --- DIA A DIA (SCALE) ---
+  2026-02-28 | $32.32 | 307 imprs | 35 clicks | CTR 11.4% | 0 vendas | CPA $0 [SEM VENDA]
+  2026-03-01 | $100.48 | 1193 imprs | 138 clicks | CTR 11.57% | 6 vendas | CPA $16.75 [OK]
+  2026-03-02 | $104.51 | 1221 imprs | 124 clicks | CTR 10.16% | 4 vendas | CPA $26.13 [OK]
+  2026-03-03 | $67.18 | 728 imprs | 89 clicks | CTR 12.23% | 2 vendas | CPA $33.59 [OK]
+
+=======================================================
+  CAMPANHA: TEST (28/02 - 03/03)
+=======================================================
+
+--- POR CRIATIVO ---
+            Ad  Spend  Imprs  Clicks  Sales   CTR  CPA
+      AG7-AD20  22.82    293      27      0  9.22    0
+AG7-AD4-C-41-A   6.91     73      10      0 13.70    0
+      AG0-AD21   6.15     53       9      0 16.98    0
+      AG19-AD1   4.80     56      11      0 19.64    0
+AG7-AD4-C-21-A   3.47     21       2      0  9.52    0
+    AG7-AD21-B   2.92     31       8      0 25.81    0
+      AG7-AD22   1.42     29       3      0 10.34    0
+      AG0-AD20   1.15      8       2      0 25.00    0
+    AG12-AD1-A   0.57      6       1      0 16.67    0
+   IMG34-AD1-A   0.00      0       0      0  0.00    0
+   IMG34-AD2-B   0.00      0       0      0  0.00    0
+
+  TOTAIS: Gasto=$50.21 | Clicks=73 | CTR=12.81% | Vendas=0 | CPA=$0
+
+  --- DIA A DIA (TEST) ---
+  2026-02-28 | $12.22 | 109 imprs | 12 clicks | CTR 11.01% | 0 vendas | CPA $0 [SEM VENDA]
+  2026-03-01 | $11.43 | 120 imprs | 13 clicks | CTR 10.83% | 0 vendas | CPA $0 [SEM VENDA]
+  2026-03-02 | $15.18 | 205 imprs | 22 clicks | CTR 10.73% | 0 vendas | CPA $0 [SEM VENDA]
+  2026-03-03 | $11.38 | 136 imprs | 26 clicks | CTR 19.12% | 0 vendas | CPA $0 [SEM VENDA]

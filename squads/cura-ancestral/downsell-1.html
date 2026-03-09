@@ -113,6 +113,16 @@
             text-decoration: underline;
             font-size: 0.9em;
         }
+
+        @media (max-width: 600px) {
+            header { margin: 20px auto; padding: 10px; }
+            h1 { font-size: 1.6em; }
+            .main-container { padding: 25px 15px; }
+            .product-image { max-width: 200px; }
+            .button-accept { font-size: 1.1em !important; padding: 20px 15px !important; }
+            .button-deny { font-size: 14px !important; }
+            .benefit-item { font-size: 0.95em; }
+        }
     </style>
 </head>
 <body>
@@ -144,9 +154,35 @@
             <p style="font-size: 0.9em; color: #666;">(Pagamento único, sem mensalidades)</p>
         </div>
 
-        <a href="members-area/structure.md" class="cta-button">SIM! QUERO O ALÍVIO IMEDIATO ➱</a>
+        <script src="https://cdn.lastlink.com/upsell.min.js"></script>
+        <script>
+        var upsellRedirect = "https://cura-ancestral.vercel.app/upsell-2.html";
 
-        <a href="members-area/structure.md" class="no-thanks">Não, obrigado. Prefiro continuar lidando com as dores agudas sozinho(a).</a>
+        function setupDenyButtons() {
+            document.querySelectorAll('[id^="denyButton"]').forEach(button => {
+                button.onclick = function() {
+                    const currentUrl = new URL(window.location.href);
+                    const newUrl = new URL("https://cura-ancestral.vercel.app/upsell-2.html");
+
+                    currentUrl.searchParams.forEach((value, key) => {
+                        newUrl.searchParams.append(key, value);
+                    });
+
+                    window.location.href = newUrl.toString();
+                };
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupDenyButtons);
+        } else {
+            setupDenyButtons();
+        }
+        </script>
+        <div style="font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; gap: 24px; align-items: center; cursor: pointer; margin-top: 20px;">
+            <div class="button-default button-accept w-full" style="padding: 20px 45px; line-height: 22px; border-radius: 50px; font-weight: 700 !important; background-color: var(--laranja-cta); color: white; font-size: 1.4em; box-shadow: 0 4px 10px rgba(242, 140, 40, 0.3);" id="llupsell-C2A0081BB-"> SIM! QUERO O ALÍVIO IMEDIATO ➱ </div>
+            <div class="button-default button-deny w-full" style="text-decoration: underline; line-height: 22px; font-size: 16px; font-weight: 700 !important; color: #999;" id="denyButton8cdb265"> Não, obrigado. Prefiro continuar lidando com as dores agudas sozinho(a). </div>
+        </div>
     </div>
 
     <footer style="padding: 40px; color: #888; font-size: 0.8em;">

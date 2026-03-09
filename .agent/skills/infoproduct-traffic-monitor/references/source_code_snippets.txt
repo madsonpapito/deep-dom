@@ -1,0 +1,43 @@
+# Source Code Snippets para PublicWWW
+# Trechos de código para buscar em páginas web
+# Presença desses snippets indica página de vendas ativa e otimizada
+# Formato: snippet | categoria | descrição
+
+# === PLAYERS DE VÍDEO (indicam VSL/TSL) ===
+vturb.com | player | Vturb - player mais usado em VSLs brasileiras
+cdn.panda | player | Panda Video - player profissional para VSLs
+player.vimeo.com | player | Vimeo - usado em VSLs mais antigas
+wistia.com | player | Wistia - player premium para marketing
+fast.wistia.com | player | Wistia CDN - player premium
+hotmart.com/player | player | Hotmart Player nativo
+cdn.jwplayer.com | player | JW Player - player profissional
+
+# === PIXELS / TAGS DE CONVERSÃO ===
+fbq('init' | pixel | Facebook Pixel - rastreamento Meta
+fbq("init" | pixel | Facebook Pixel (aspas duplas)
+ttq.load | pixel | TikTok Pixel - rastreamento TikTok
+gtag('config' | pixel | Google Analytics / Google Ads Tag
+hotjar.com | pixel | Hotjar - heatmaps e recordings
+clarity.ms | pixel | Microsoft Clarity - heatmaps grátis
+snap.licdn.com | pixel | LinkedIn Insight Tag
+s.pinimg.com/ct | pixel | Pinterest Tag
+
+# === TRACKERS / ATTRIBUTION ===
+utmify | tracker | UTMify - tracker brasileiro popular
+redtrack | tracker | RedTrack - tracker profissional
+voluum | tracker | Voluum - tracker enterprise
+clickmagick | tracker | ClickMagick - tracker de links
+hyros | tracker | Hyros - attribution AI-based
+wicked.report | tracker | Wicked Reports - attribution
+triplewhale | tracker | Triple Whale - attribution ecommerce
+
+# === CHECKOUT SCRIPTS (indicam página de vendas ativa) ===
+hotmart.com/sales | checkout | Hotmart Sales Script
+kiwify.com.br | checkout | Kiwify Script
+perfectpay.com.br | checkout | PerfectPay Script
+braip.com | checkout | Braip Script
+
+# === URGENCY / SCARCITY TOOLS ===
+deadline-funnel | urgency | Deadline Funnel - countdown timers
+prooftactor | urgency | Social proof notifications
+notificationx | urgency | Notification popups

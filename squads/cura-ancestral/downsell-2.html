@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÚLTIMA CHANCE: Guia Farmácia na Cozinha</title>
+    <style>
+        :root {
+            --verde-floresta: #2D5A27;
+            --branco-crema: #F9F9F7;
+            --texto-cinza: #333333;
+            --laranja-cta: #F28C28;
+            --azul-destaque: #2980B9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--branco-crema);
+            color: var(--texto-cinza);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .alert-bar {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        header {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--verde-floresta);
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .main-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 2px solid #eee;
+        }
+
+        .product-image {
+            max-width: 260px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box {
+            background-color: #f0f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid var(--azul-destaque);
+            text-align: left;
+        }
+
+        .price-tag {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--verde-floresta);
+            margin: 20px 0;
+        }
+
+        footer {
+            padding: 40px;
+            color: #888;
+            font-size: 0.8em;
+        }
+
+        @media (max-width: 600px) {
+            header { margin: 20px auto; padding: 10px; }
+            h1 { font-size: 1.6em; }
+            .main-container { padding: 25px 15px; }
+            .product-image { max-width: 200px; }
+            .button-accept { font-size: 1.1em !important; padding: 20px 15px !important; }
+            .button-deny { font-size: 14px !important; }
+            .price-tag { font-size: 1.4em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="alert-bar">
+        OFERTA DE ENCERRAMENTO: Disponível apenas agora.
+    </div>
+
+    <header>
+        <h1>Eu entendo que o acompanhamento VIP pode não ser o que você busca hoje...</h1>
+        <p style="font-size: 1.1em;">Mas você não pode sair sem o nosso <strong>Guia de Consulta Rápida</strong> para o dia a dia.</p>
+    </header>
+
+    <div class="main-container">
+        <h2>Guia Digital: Farmácia na Cozinha</h2>
+        
+        <p>Tenha na palma da mão a lista completa de substituições naturais para os sintomas mais comuns do dia a dia (azia, insônia, má digestão e gripes).</p>
+
+        <img src="imagem/guia-digital-farmacia-na-cozinha.webp" alt="Guia Farmácia na Cozinha" class="product-image">
+
+        <div class="highlight-box">
+            <strong>O que você leva no Guia:</strong>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li>✓ Tabela de substituição: Químico vs. Natural.</li>
+                <li>✓ Guia de compras inteligente na feira.</li>
+                <li>✓ Protocolos de preparo rápido (menos de 5 min).</li>
+            </ul>
+        </div>
+
+        <p class="price-tag">Por apenas R$ 27,00</p>
+        <p style="font-size: 0.9em; color: #666; margin-top: -15px;">(Pagamento único - Acesso imediato)</p>
+
+        <script src="https://cdn.lastlink.com/upsell.min.js"></script>
+        <script>
+        var upsellRedirect = "https://lastlink.com/app/member/dashboardV2";
+
+        function setupDenyButtons() {
+            document.querySelectorAll('[id^="denyButton"]').forEach(button => {
+                button.onclick = function() {
+                    const currentUrl = new URL(window.location.href);
+                    const newUrl = new URL("https://lastlink.com/app/member/dashboardV2");
+
+                    currentUrl.searchParams.forEach((value, key) => {
+                        newUrl.searchParams.append(key, value);
+                    });
+
+                    window.location.href = newUrl.toString();
+                };
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupDenyButtons);
+        } else {
+            setupDenyButtons();
+        }
+        </script>
+        <div style="font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; gap: 24px; align-items: center; cursor: pointer; margin-top: 20px;">
+            <div class="button-default button-accept w-full" style="padding: 18px 40px; line-height: 22px; border-radius: 50px; font-weight: 700 !important; background-color: var(--laranja-cta); color: white; font-size: 1.4em; text-transform: uppercase; box-shadow: 0 4px 10px rgba(242, 140, 40, 0.3);" id="llupsell-C6B563AA2-"> Sim! Comprar agora ➱ </div>
+            <div class="button-default button-deny w-full" style="text-decoration: underline; line-height: 22px; font-size: 16px; font-weight: 700 !important; color: #999;" id="denyButton8cdb265"> Não, obrigado. Prefiro ir direto para a minha área de membros. </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Cura Ancestral. Direitos reservados.
+    </footer>
+
+</body>
+</html>

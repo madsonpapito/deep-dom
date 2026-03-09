@@ -1,0 +1,21 @@
+{
+    "version": "4.2.11",
+    "ide": "antigravity",
+    "project_id": "renova30-monorepo",
+    "mcp": {
+        "enabled": true,
+        "provider": "native"
+    },
+    "workflows": {
+        "path": ".agent/workflows",
+        "auto_sync": true
+    },
+    "rules": {
+        "path": ".antigravity/rules",
+        "format": "cursor-style"
+    },
+    "features": {
+        "cloud_integration": true,
+        "native_firebase": true
+    }
+}

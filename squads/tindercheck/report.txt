@@ -1,0 +1,35 @@
+=== SCALE ===
+AD41 |  | 0cl | 0v | CPA | CTR0.0
+AD22 |  | 0cl | 0v | CPA | CTR0.0
+IMG54 |  | 2cl | 0v | CPA | CTR5.0
+ANG7 |  | 0cl | 0v | CPA | CTR0.0
+ANG8 |  | 54cl | 1v | CPA | CTR7.5
+ANG12 |  | 0cl | 0v | CPA | CTR0
+AG7-IMG3 |  | 287cl | 11v | CPA | CTR12.1
+AG7-AD20 |  | 23cl | 0v | CPA | CTR11.2
+AG0-AD20 |  | 21cl | 0v | CPA | CTR20.4
+TOTAL:  | 387cl | 12v | CPA | CTR11.2
+--- DIA A DIA ---
+2026-02-28 |  | 35cl | 0v | CPA
+2026-03-01 |  | 138cl | 6v | CPA
+2026-03-02 |  | 124cl | 4v | CPA
+2026-03-03 |  | 89cl | 2v | CPA
+
+=== TEST ===
+AG0-AD20 |  | 2cl | 0v | CPA | CTR25.0
+AG7-AD20 |  | 27cl | 0v | CPA | CTR9.2
+IMG34-AD1-A |  | 0cl | 0v | CPA | CTR0
+IMG34-AD2-B |  | 0cl | 0v | CPA | CTR0
+AG7-AD21-B |  | 8cl | 0v | CPA | CTR25.8
+AG0-AD21 |  | 9cl | 0v | CPA | CTR17.0
+AG12-AD1-A |  | 1cl | 0v | CPA | CTR16.7
+AG7-AD4-C-21-A |  | 2cl | 0v | CPA | CTR9.5
+AG7-AD4-C-41-A |  | 10cl | 0v | CPA | CTR13.7
+AG19-AD1 |  | 11cl | 0v | CPA | CTR19.6
+AG7-AD22 |  | 3cl | 0v | CPA | CTR10.3
+TOTAL:  | 73cl | 0v | CPA | CTR12.8
+--- DIA A DIA ---
+2026-02-28 |  | 12cl | 0v | CPA
+2026-03-01 |  | 13cl | 0v | CPA
+2026-03-02 |  | 22cl | 0v | CPA
+2026-03-03 |  | 26cl | 0v | CPA
