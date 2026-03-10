@@ -3,6 +3,12 @@
 import { useEffect, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
+declare global {
+  interface Window {
+    upsellRedirect?: string;
+  }
+}
+
 export function useLastlink(acceptRedirect: string, denyRedirect: string) {
   const router = useRouter();
   const searchParams = useSearchParams();
