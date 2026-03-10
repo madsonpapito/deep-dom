@@ -1,7 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function LessonPage({ params }: { params: { id: string } }) {
+type Props = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function LessonPage({ params }: Props) {
+  const { id } = await params;
+
   return (
     <main className="min-h-screen bg-gray-50">
       <nav className="bg-forest text-white py-4 px-6 flex items-center gap-6 shadow-lg">
@@ -10,7 +16,7 @@ export default function LessonPage({ params }: { params: { id: string } }) {
         </Link>
         <div className="h-6 w-px bg-white/20" />
         <div className="font-heading font-bold text-sm md:text-base truncate">
-          Etapa 1: Desafio Despensa Blindada
+          Etapa 1: Desafio Despensa Blindada (Aula {id})
         </div>
       </nav>
 
@@ -30,7 +36,7 @@ export default function LessonPage({ params }: { params: { id: string } }) {
 
             <div className="px-6 md:px-0">
               <h1 className="text-2xl md:text-3xl font-black text-forest font-heading mb-4 leading-tight">
-                Dia 2: O Despertar da Planta (Ativando o SAB)
+                Lição: O Despertar da Planta (Ativando o SAB)
               </h1>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Nesta aula, você aprenderá a técnica exata para romper a inércia térmica e extrair o poder real das ervas na sua cozinha usando apenas o chiado da água.
@@ -42,7 +48,7 @@ export default function LessonPage({ params }: { params: { id: string } }) {
                 </h3>
                 <p className="text-gray-600 mb-6 font-medium">Baixe o seu Guia Visual desta aula para imprimir e deixar na bancada da sua cozinha.</p>
                 <button className="bg-forest text-white font-black py-4 px-8 rounded-xl shadow-lg hover:scale-[1.02] transition-transform active:translate-y-1 flex items-center gap-3">
-                  <span>⬇</span> BAIXAR MEU GUIA DO DIA 2 (PDF)
+                  <span>⬇</span> BAIXAR MEU GUIA (PDF)
                 </button>
               </div>
             </div>
@@ -56,11 +62,11 @@ export default function LessonPage({ params }: { params: { id: string } }) {
               </div>
               <div className="max-height-[600px] overflow-y-auto">
                 {[1, 2, 3, 4, 5].map((day) => (
-                  <div key={day} className={`p-4 border-b border-gray-50 cursor-pointer transition-colors flex items-center gap-4 ${day === 2 ? 'bg-sage/10 border-l-4 border-forest' : 'hover:bg-gray-50 opacity-60'}`}>
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${day === 2 ? 'bg-forest text-white' : 'bg-gray-200 text-gray-500'}`}>
+                  <div key={day} className={`p-4 border-b border-gray-50 cursor-pointer transition-colors flex items-center gap-4 ${id.includes(day.toString()) ? 'bg-sage/10 border-l-4 border-forest' : 'hover:bg-gray-50 opacity-60'}`}>
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${id.includes(day.toString()) ? 'bg-forest text-white' : 'bg-gray-200 text-gray-500'}`}>
                       {day}
                     </div>
-                    <div className="text-sm font-bold text-gray-900">Dia {day}: {day === 2 ? 'O Despertar da Planta' : 'Lição do Desafio'}</div>
+                    <div className="text-sm font-bold text-gray-900">Lição do Dia {day}</div>
                   </div>
                 ))}
               </div>
