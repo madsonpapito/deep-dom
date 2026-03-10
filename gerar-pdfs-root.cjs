@@ -10,16 +10,28 @@ async function generatePDFs() {
     });
     
     const membersPath = path.join(process.cwd(), 'squads', 'cura-ancestral', 'members-area');
-    const files = fs.readdirSync(membersPath).filter(file => file.startsWith('guia-') && file.endsWith('.html'));
+    
+    // Lista expandida de arquivos para converter
+    const filesToConvert = [
+        'manual-principal.html',
+        'mapa-consulta-rapida.html',
+        'escudo-interacoes.html',
+        'codice-potencializacao.html',
+        'cofre-ervas-raras.html'
+    ];
+    
+    // Adicionar os guias do desafio que comecam com guia-
+    const guides = fs.readdirSync(membersPath).filter(file => file.startsWith('guia-') && file.endsWith('.html'));
+    const allFiles = [...new Set([...filesToConvert, ...guides])];
 
-    if (files.length === 0) {
-        console.log('Nenhum guia HTML encontrado para conversao.');
-        await browser.close();
-        return;
-    }
+    for (const file of allFiles) {
+        const fullPath = path.join(membersPath, file);
+        if (!fs.existsSync(fullPath)) {
+            console.log(`Arquivo nao encontrado: ${file}, pulando...`);
+            continue;
+        }
 
-    for (const file of files) {
-        const filePath = 'file:///' + path.join(membersPath, file).replace(/\\/g, '/');
+        const filePath = 'file:///' + fullPath.replace(/\\/g, '/');
         const pdfPath = path.join(membersPath, file.replace('.html', '.pdf'));
         
         console.log('Convertendo: ' + file + ' -> ' + file.replace('.html', '.pdf'));
