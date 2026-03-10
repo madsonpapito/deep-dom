@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>Manual da Cura Ancestral | Protocolo V.I.T.A.L.</title>
     <style>
-        @media print { body { background: white; } .no-print { display: none; } }
+        @media print { 
+            body { background: white; font-size: 16pt; color: #000; } 
+            .no-print { display: none; }
+            .page-a4 { box-shadow: none; margin: 0; padding: 0; width: 100%; border: none; }
+            h1 { font-size: 28pt; margin-top: 0; }
+            .phase-box { page-break-inside: avoid; border-left: 10px solid var(--verde-floresta) !important; background: #fff !important; }
+            .footer-note { position: relative; bottom: 0; margin-top: 50px; }
+        }
+        @page { size: A4; margin: 20mm; }
         :root { --verde-floresta: #2D5A27; --laranja-cta: #F28C28; --bege-claro: #F9F7F2; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #555; display: flex; justify-content: center; }
         .page-a4 { background: white; width: 210mm; min-height: 297mm; padding: 20mm; box-shadow: 0 0 10px rgba(0,0,0,0.5); box-sizing: border-box; position: relative; margin: 20px; }

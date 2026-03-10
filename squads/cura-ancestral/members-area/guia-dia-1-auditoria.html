@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Guia Dia 1: Auditoria da Farmácia Caseira</title>
     <style>
-        @media print {
-            body { background: white; }
+        @media print { 
+            body { background: white; font-size: 16pt; color: #000; } 
             .no-print { display: none; }
+            .page-a4 { box-shadow: none; margin: 0; padding: 0; width: 100%; border: none; }
+            .audit-table { width: 100%; font-size: 14pt; }
+            .audit-table th { background-color: #eee !important; color: #000 !important; border: 1pt solid #ccc; }
+            .audit-table td { border: 1pt solid #ccc; }
+            .highlight-box { page-break-inside: avoid; background: #fff !important; border: 2pt dashed #000 !important; }
         }
+        @page { size: A4; margin: 20mm; }
 
         :root {
             --verde-floresta: #2D5A27;

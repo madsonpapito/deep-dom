@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Guia Dia 5: O Mapa da Independência (21 Dias)</title>
     <style>
-        @media print {
-            body { background: white; }
-            .no-print { display: none; }
+        @media print { 
+            body { background: white; font-size: 14pt; color: #000; } 
+            .no-print, .print-btn { display: none !important; }
+            .page-a4 { box-shadow: none; margin: 0; padding: 0; width: 100%; border: none; }
+            .calendar-grid { gap: 5px; }
+            .day-box { border: 1pt solid #ccc !important; background: #fff !important; min-height: 60px; }
+            .day-number { color: #000 !important; }
+            .daily-ritual-box { page-break-inside: avoid; border: 1pt dashed #000 !important; background: #fff !important; }
         }
+        @page { size: A4; margin: 15mm; }
 
         :root {
             --verde-floresta: #2D5A27;

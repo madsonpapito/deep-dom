@@ -145,6 +145,10 @@
             border-radius: 5px;
             font-weight: bold;
             margin-top: 10px;
+            transition: transform 0.1s;
+        }
+        .btn-download:active {
+            transform: translateY(2px);
         }
 
         @media (max-width: 900px) {
@@ -162,7 +166,7 @@
 
     <nav class="navbar-aula">
         <a href="dashboard.html" class="btn-back">⬅ Voltar ao Painel</a>
-        <div id="module-title-nav" style="font-weight: bold;">Módulo 1: Desafio Despensa Blindada</div>
+        <div id="module-title-nav" style="font-weight: bold;">Etapa 1: Desafio Despensa Blindada</div>
     </nav>
 
     <div class="layout-aula">
@@ -197,7 +201,7 @@
         <!-- Barra Lateral de Aulas -->
         <aside class="sidebar-aulas">
             <div class="sidebar-header">
-                <h3 style="margin: 0; font-size: 1.1em;">Aulas do Módulo</h3>
+                <h3 style="margin: 0; font-size: 1.1em;">Lista de Vídeos</h3>
             </div>
             <ul class="lesson-list" id="lesson-list">
                 <!-- Populado via JS -->
@@ -212,7 +216,7 @@
                 title: "Módulo 0: Boas-Vindas & Primeiros Passos",
                 lessons: ["O Início da sua Alforria", "Como navegar no portal", "Segurança em Primeiro Lugar", "Comunidade 'Cura em Família'"],
                 material: "manual-principal.html",
-                materialText: "⬇ BAIXAR MANUAL PRINCIPAL (HTML)"
+                materialText: "⬇ BAIXAR MEU GUIA"
             },
             "1": {
                 title: "Módulo 1: Desafio Despensa Blindada",

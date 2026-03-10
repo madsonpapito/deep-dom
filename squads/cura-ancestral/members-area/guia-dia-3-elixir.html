@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Guia Dia 3: O Elixir do Estômago Blindado</title>
     <style>
-        @media print {
-            body { background: white; }
-            .no-print { display: none; }
+        @media print { 
+            body { background: white; font-size: 16pt; color: #000; } 
+            .no-print, .print-btn { display: none !important; }
+            .page-a4 { box-shadow: none; margin: 0; padding: 0; width: 100%; border: none; }
+            .elixir-formula { font-size: 18pt; gap: 10px; }
+            .ingredient-circle { border: 2pt solid #ccc !important; background: #fff !important; }
+            .prep-steps { page-break-inside: avoid; background: #fff !important; border: 1pt solid #ccc !important; }
+            .clock-box { page-break-inside: avoid; border: 2pt solid #000 !important; background: #fff !important; }
         }
+        @page { size: A4; margin: 20mm; }
 
         :root {
             --verde-floresta: #2D5A27;

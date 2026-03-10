@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>Códice da Potencialização Máxima | SAB Avançado</title>
     <style>
-        @media print { body { background: white; } .no-print { display: none; } }
+        @media print { 
+            body { background: white; font-size: 16pt; color: #000; } 
+            .no-print, .print-btn { display: none !important; }
+            .page-a4 { box-shadow: none; margin: 0; padding: 0; width: 100%; border: none; }
+            .pillar-box { page-break-inside: avoid; border: 2pt dashed #000 !important; background: #fff !important; }
+        }
+        @page { size: A4; margin: 20mm; }
         :root { --verde-floresta: #2D5A27; --laranja-cta: #F28C28; --bege-claro: #F9F7F2; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #555; display: flex; justify-content: center; }
         .page-a4 { background: white; width: 210mm; min-height: 297mm; padding: 20mm; box-shadow: 0 0 10px rgba(0,0,0,0.5); box-sizing: border-box; position: relative; margin: 20px; }
