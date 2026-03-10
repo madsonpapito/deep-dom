@@ -28,7 +28,7 @@ export default function DashboardPage() {
             <h2 className="text-3xl font-semibold">{programWeek.title}</h2>
             <p className="text-lg text-gray-300">{programWeek.description}</p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {programWeek.workouts.map((workout) => (
+              {programWeek.workouts.map((workout: any) => (
                 <div key={workout.id} className="flex flex-col rounded-lg bg-white/10 p-6 transition hover:bg-white/20">
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold">{workout.title}</h3>
