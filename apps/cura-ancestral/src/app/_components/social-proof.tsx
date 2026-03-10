@@ -30,7 +30,7 @@ export function SocialProof() {
           </div>
         </div>
         <p className="text-xl text-gray-800 leading-relaxed italic mb-6">
-          "Em apenas 14 dias seguindo o SAB, senti meu corpo <strong className="text-forest underline">'desenferrujar'</strong>. Subir escadas sem estalos nos joelhos e acordar com as mãos leves, sem o peso da inflamação crônica."
+          &quot;Em apenas 14 dias seguindo o SAB, senti meu corpo <strong className="text-forest underline">&apos;desenferrujar&apos;</strong>. Subir escadas sem estalos nos joelhos e acordar com as mãos leves, sem o peso da inflamação crônica.&quot;
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-red-50 p-4 rounded-lg border border-red-100 text-sm md:text-base">
@@ -50,7 +50,7 @@ export function SocialProof() {
         <div>
           <strong className="text-lg text-black font-bold">Jorge Mendes, 68 anos</strong>
           <p className="text-lg text-gray-700 italic mt-2 leading-relaxed">
-            "Eu sou engenheiro aposentado e sempre fui cético. Mas em 10 dias, os estalos no meu joelho pararam e eu voltei a caminhar meus 4km por dia. Melhor decisão que tomei."
+            &quot;Eu sou engenheiro aposentado e sempre fui cético. Mas em 10 dias, os estalos no meu joelho pararam e eu voltei a caminhar meus 4km por dia. Melhor decisão que tomei.&quot;
           </p>
         </div>
       </div>

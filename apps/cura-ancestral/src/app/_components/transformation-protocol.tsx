@@ -76,7 +76,7 @@ export function TransformationProtocol() {
       </div>
       
       <p className="text-center mt-12 text-xl font-bold italic text-forest">
-        "Se você sabe ferver água para um café, você tem toda a habilidade necessária para o SAB."
+        &quot;Se você sabe ferver água para um café, você tem toda a habilidade necessária para o SAB.&quot;
       </p>
     </section>
   );

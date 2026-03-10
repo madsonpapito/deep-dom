@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Script from 'next/script';
 import { Timer } from '../_components/timer';
 import { useLastlink } from '../_hooks/use-lastlink';

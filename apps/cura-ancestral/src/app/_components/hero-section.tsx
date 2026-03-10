@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 export function HeroSection() {
   return (
@@ -9,7 +8,7 @@ export function HeroSection() {
       </span>
       
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-black leading-tight mb-6 max-w-4xl mx-auto tracking-tight">
-        Recupere sua mobilidade e dê adeus à "coleira da farmácia" sem sair da sua cozinha.
+        Recupere sua mobilidade e dê adeus à &quot;coleira da farmácia&quot; sem sair da sua cozinha.
       </h1>
       
       <p className="text-lg md:text-2xl italic text-gray-700 mb-10 max-w-2xl mx-auto leading-relaxed">

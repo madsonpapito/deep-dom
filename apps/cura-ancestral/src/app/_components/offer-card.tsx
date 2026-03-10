@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { LASTLINK_CONFIG } from '../../config/lastlink';
 
 export function OfferCard() {
@@ -24,7 +23,7 @@ export function OfferCard() {
             <strong className="text-forest">R$ 297,00</strong>
           </div>
           <div className="flex justify-between border-b border-gray-200 pb-2">
-            <span className="text-gray-700 font-medium">🎁 BÔNUS: Guia 'Mercado de Ouro'</span>
+            <span className="text-gray-700 font-medium">🎁 BÔNUS: Guia &apos;Mercado de Ouro&apos;</span>
             <strong className="text-forest">R$ 67,00</strong>
           </div>
           <div className="flex justify-between border-b border-gray-200 pb-2">
@@ -32,11 +31,11 @@ export function OfferCard() {
             <strong className="text-forest">R$ 147,00</strong>
           </div>
           <div className="flex justify-between border-b border-gray-200 pb-2">
-            <span className="text-gray-700 font-medium">🎁 BÔNUS: Masterclass 'Cozinha Alquímica'</span>
+            <span className="text-gray-700 font-medium">🎁 BÔNUS: Masterclass &apos;Cozinha Alquímica&apos;</span>
             <strong className="text-forest">R$ 197,00</strong>
           </div>
           <div className="flex justify-between">
-            <span className="text-gray-700 font-medium">🎁 BÔNUS: Comunidade VIP 'Mestres da Sinergia'</span>
+            <span className="text-gray-700 font-medium">🎁 BÔNUS: Comunidade VIP &apos;Mestres da Sinergia&apos;</span>
             <strong className="text-forest">R$ 497,00</strong>
           </div>
         </div>

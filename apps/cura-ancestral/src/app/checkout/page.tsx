@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { TopUrgency } from '../_components/top-urgency';
 
 const orderBumps = [
@@ -100,10 +101,10 @@ export default function CheckoutPage() {
               </button>
 
               <div className="mt-8 flex justify-center gap-4 opacity-60 filter grayscale hover:grayscale-0 transition-all duration-500">
-                <img src="https://img.icons8.com/color/48/ssl.png" width="30" alt="SSL" />
-                <img src="https://img.icons8.com/color/48/visa.png" width="30" alt="Visa" />
-                <img src="https://img.icons8.com/color/48/mastercard.png" width="30" alt="Mastercard" />
-                <img src="https://img.icons8.com/color/48/pix.png" width="30" alt="Pix" />
+                <Image src="https://img.icons8.com/color/48/ssl.png" width={30} height={30} alt="SSL" />
+                <Image src="https://img.icons8.com/color/48/visa.png" width={30} height={30} alt="Visa" />
+                <Image src="https://img.icons8.com/color/48/mastercard.png" width={30} height={30} alt="Mastercard" />
+                <Image src="https://img.icons8.com/color/48/pix.png" width={30} height={30} alt="Pix" />
               </div>
               
               <p className="text-[10px] text-center text-gray-400 mt-6 uppercase font-bold tracking-widest">

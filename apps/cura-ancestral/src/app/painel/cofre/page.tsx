@@ -26,7 +26,7 @@ export default function CofrePage() {
               </p>
 
               <div className="bg-gold/5 p-6 rounded-xl border-l-4 border-gold">
-                <p className="font-medium italic">"A natureza não dá saltos, mas ela acelera quando damos as ferramentas certas."</p>
+                <p className="font-medium italic">&quot;A natureza não dá saltos, mas ela acelera quando damos as ferramentas certas.&quot;</p>
               </div>
 
               <div className="p-8 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200 text-center">

@@ -26,7 +26,7 @@ export default function CozinhaPage() {
               </p>
 
               <div className="bg-amber-50 p-6 rounded-xl border-l-4 border-amber-cta">
-                <p className="font-medium italic">"Sua cozinha não é apenas um lugar de comer, é seu laboratório de vida."</p>
+                <p className="font-medium italic">&quot;Sua cozinha não é apenas um lugar de comer, é seu laboratório de vida.&quot;</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
