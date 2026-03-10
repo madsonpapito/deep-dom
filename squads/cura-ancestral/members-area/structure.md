@@ -26,7 +26,7 @@ Este documento define a organização da plataforma de alunos, garantindo uma ex
 ### 🌿 Módulo 3: Protocolo V.I.T.A.L. (21 Dias de Limpeza Profunda)
 - **Fase 1 (Vincular - Dia 1-3)**: Tríades de ervas sinérgicas.
 - **Fase 2 (Incendiar - Dia 4-7)**: Ativação técnica de calor.
-- **Fase 3 (Transmudar - Dia 8-14)**: Agentes de transporte lipídico.
+- **Fase 3 (Transmutar - Dia 8-14)**: Agentes de transporte lipídico.
 - **Fase 4 (Alimentar - Dia 15-20)**: Ingestão cronometrada e janelas enzimáticas.
 - **Fase 5 (Libertar - Dia 21+)**: Consolidação da autonomia e desmame natural.
 

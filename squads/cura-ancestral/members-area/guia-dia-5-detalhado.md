@@ -20,7 +20,7 @@ Dirce, você concluiu os 5 dias de resgate. Pense em como você se sentia na seg
 ### 2. O Desafio dos 21 Dias (Protocolo V.I.T.A.L.)
 Os 5 dias foram para apagar o incêndio. Agora, os próximos 16 dias são para **reconstruir a casa**. 
 - **Fase Vincular**: Onde você continua com os elixires matinais.
-- **Fase Transmudar**: Onde entraremos com a limpeza profunda do seu fígado.
+- **Fase Transmutar**: Onde entraremos com a limpeza profunda do seu fígado.
 - **Fase Libertar**: Onde você começará a notar que o seu corpo pede cada vez menos remédios de farmácia.
 
 ### 3. Seu Novo Calendário de Geladeira

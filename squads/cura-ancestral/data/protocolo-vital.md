@@ -16,7 +16,7 @@ Este protocolo é o método passo a passo para desinflamar seu corpo, blindar se
 - **Técnica SAB**: Aprender a identificar o "Chiado da Água" (80°C) para não queimar os ativos sensíveis.
 - **Resultado Esperado**: Diminuição da rigidez matinal nos joelhos e mãos.
 
-## 🧪 Fase 3: TRANSMUDAR (Dias 8 ao 14) - O Transporte Bio-Disponível
+## 🧪 Fase 3: TRANSMUTAR (Dias 8 ao 14) - O Transporte Bio-Disponível
 **Objetivo**: Usar veículos lipídicos para levar a cura até o interior das articulações.
 - **Ação Principal**: Criação do "Óleo de Açafrão e Coco" (SAB Lipídico).
 - **Mecanismo**: O açafrão sozinho não é absorvido; ele precisa da gordura saturada para "viajar" no sangue da Matriarca.

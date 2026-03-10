@@ -72,7 +72,7 @@ Enquanto chás comuns e suplementos sintéticos perdem 80–90% do potencial na 
 
 1. **Vincular** (Dia 1–3) — Tríades de ervas sinérgicas que se potencializam contra a dor  
 2. **Incendiar** (Dia 4–7) — Calor específico para romper a parede celular  
-3. **Transmudar** (Dia 8–14) — Veículos lipídicos para transporte direcionado até a inflamação  
+3. **Transmutar** (Dia 8–14) — Veículos lipídicos para transporte direcionado até a inflamação  
 4. **Alimentar** (Dia 15–20) — Ingestão cronometrada nas janelas enzimáticas de pico de absorção  
 5. **Libertar** (Dia 21+) — Consolidação da autonomia + desmame natural da farmácia
 

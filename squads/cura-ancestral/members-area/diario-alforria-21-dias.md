@@ -23,7 +23,7 @@ Este módulo é o coração do seu processo de regeneração. Ele é dividido em
 - **Ativação SAB**: Chá Ativado de Gengibre e Canela (Fervura de 7 min). Ingerir às 10:00 e 16:00.
 - **Tarefa**: Fazer o teste de "Abrir e Fechar as Mãos" ao acordar e anotar a facilidade.
 
-## 🧪 Guia Fase 3: TRANSMUDAR (Dias 8-14)
+## 🧪 Guia Fase 3: TRANSMUTAR (Dias 8-14)
 **Foco**: Transporte de Ativos para o Sangue.
 - **Ritual Principal**: Óleo de Açafrão e Coco (SAB Lipídico). 1 colher de sobremesa antes do jantar.
 - **Compressa Noturna**: Aplicar o Protocolo das Juntas Livres (Gengibre + Açafrão) na área de maior dor.
