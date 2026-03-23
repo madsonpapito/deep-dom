@@ -49,41 +49,40 @@ export default function DeepDomainsLP() {
         ⚠️ DO NOT CLOSE THIS PAGE. YOUR OPPORTUNITY EXPIRES SOON.
       </div>
 
-      <main className="max-w-4xl mx-auto px-4 py-8">
+      <main className="max-w-4xl mx-auto px-4 py-8 md:py-12">
         {/* Header Section */}
-        <div className="text-center mb-10">
-           <p className="text-red-600 font-bold uppercase tracking-[0.2em] text-xs mb-6 px-4 py-1 bg-red-50 inline-block rounded-full border border-red-100 italic">
+        <div className="text-center mb-10 md:mb-16">
+           <p className="text-red-600 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs mb-4 md:mb-6 px-4 py-1.5 bg-red-50 inline-block rounded-full border border-red-100 italic">
              Exclusive Insider Video Presentation
            </p>
-           <h1 className="text-3xl md:text-5xl font-black leading-tight text-gray-900 mb-6 drop-shadow-sm">
+           <h1 className="text-3xl md:text-5xl font-black leading-tight text-gray-900 mb-6 drop-shadow-sm px-2">
              Simple AI Tool Finds <span className="text-[#1b1464] border-b-4 border-yellow-400">"Hidden Gems"</span> That Generate $400-$700 Per Day On Autopilot
            </h1>
-           <p className="text-lg text-gray-500 max-w-2xl mx-auto font-medium">
+           <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto font-medium px-4">
               Find out how ordinary people are buying $7 domains and flipping them for thousands in days.
            </p>
         </div>
 
         {/* VSL Section - Clean Elite Layout */}
-        <div className="mb-14 relative">
+        <div className="mb-14 relative flex justify-center">
           {!showOffer && (
-            <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-10">
-              <span className="bg-[#1b1464] text-white text-[10px] font-black tracking-widest px-5 py-2 rounded-full border border-white/10 uppercase shadow-[0_10px_30px_rgba(27,20,100,0.4)] backdrop-blur-md">
+            <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20">
+              <span className="bg-[#1b1464] text-white text-[10px] font-black tracking-widest px-5 py-2 rounded-full border border-white/10 uppercase shadow-[0_10px_30px_rgba(27,20,100,0.4)] backdrop-blur-md whitespace-nowrap">
                 Unlocking Offer in {formatTime(timeLeft)}
               </span>
             </div>
           )}
           
-          <div className="relative aspect-video w-full bg-black rounded-[2.5rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.3)] border-4 border-gray-100/5 group">
+          <div className="relative w-full max-w-[450px] aspect-[9/16] bg-black rounded-3xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.4)] border border-gray-200/5 group">
             <iframe
               src="https://play.tynk.ai/p/6ba52da4-633c-400d-a6c2-a2e82fead85c"
-              width="100%"
-              height="100%"
-              style={{ aspectRatio: '9/16', border: 'none' }}
+              className="absolute inset-0 w-full h-full border-0 z-10"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
             
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            {/* Fluxo de Transmissão (Hidden on small mobile) */}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 hidden sm:block">
                <div className="inline-flex items-center gap-2 text-white/50 font-bold text-[10px] uppercase tracking-widest bg-black/60 backdrop-blur-xl px-4 py-1.5 rounded-full border border-white/10">
                   <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.8)]"></span>
                   Official HD Stream
@@ -92,26 +91,27 @@ export default function DeepDomainsLP() {
           </div>
         </div>
 
+
         {/* Offer Reveal Section */}
         {showOffer && (
           <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000">
             {/* Bonus Box */}
-            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 border-4 border-dashed border-yellow-400 rounded-3xl p-8 mb-12 text-center shadow-lg">
-               <div className="bg-yellow-400 text-white font-black px-6 py-1 rounded-full text-xs absolute -mt-11 left-1/2 -translate-x-1/2 shadow">RESERVED FOR YOU</div>
-               <h2 className="text-2xl font-black text-gray-900 mb-4 uppercase">🎁 Your $200 Gift is Here</h2>
-               <p className="text-gray-700 mb-8 text-lg font-medium leading-relaxed">
+            <div className="bg-gradient-to-br from-yellow-50 to-orange-50 border-4 border-dashed border-yellow-400 rounded-3xl p-6 md:p-10 mb-12 text-center shadow-lg relative">
+               <div className="bg-yellow-400 text-white font-black px-6 py-1.5 rounded-full text-[10px] absolute -top-4 left-1/2 -translate-x-1/2 shadow-lg">RESERVED FOR YOU</div>
+               <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-4 uppercase mt-2">🎁 Your $200 Gift is Here</h2>
+               <p className="text-gray-600 mb-8 text-base md:text-lg font-medium leading-relaxed">
                   As promised, here is your gift for watching. We said $200, but this verified domain below is independently valued at over <span className="font-bold text-gray-900">$15,000</span>.
                </p>
-               <div className="bg-white p-8 rounded-2xl border-2 border-yellow-300 shadow-sm inline-block w-full max-w-md relative overflow-hidden group">
+               <div className="bg-white p-6 md:p-8 rounded-2xl border-2 border-yellow-300 shadow-sm inline-block w-full max-w-md relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-2 bg-green-100 text-green-700 text-[10px] font-black rounded-bl-xl uppercase">Verified</div>
-                  <span className="block text-xs text-gray-400 uppercase font-black mb-3 tracking-widest">Reserved Domain:</span>
-                  <span className="text-3xl font-mono font-black text-[#1b1464] tracking-tighter group-hover:scale-105 transition-transform block">drews.it.com</span>
+                  <span className="block text-[10px] text-gray-400 uppercase font-black mb-3 tracking-widest">Reserved Domain:</span>
+                  <span className="text-2xl md:text-3xl font-mono font-black text-[#1b1464] tracking-tighter group-hover:scale-105 transition-transform block">drews.it.com</span>
                   <div className="mt-6 flex flex-col gap-2">
-                     <div className="text-gray-500 text-sm font-bold">ESTIMATED VALUATION: <span className="text-green-600">$15,900.00</span></div>
-                     <div className="text-[10px] text-gray-400 uppercase">Values based on Sedo/GoDaddy automated metrics.</div>
+                     <div className="text-gray-600 text-sm font-bold">ESTIMATED VALUATION: <span className="text-green-600">$15,900.00</span></div>
+                     <div className="text-[9px] text-gray-400 uppercase tracking-tight">Values based on Sedo/GoDaddy automated metrics.</div>
                   </div>
                </div>
-               <p className="mt-8 text-gray-500 text-sm">Instructions on how to claim this for $7 are included in the package below.</p>
+               <p className="mt-8 text-gray-400 text-xs font-medium">Instructions on how to claim this for $7 are included in the package below.</p>
             </div>
 
             {/* Main Offer Card */}
