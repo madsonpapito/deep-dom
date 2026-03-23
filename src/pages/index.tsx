@@ -97,21 +97,20 @@ export default function DeepDomainsLP() {
             {/* Bonus Box */}
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 border-4 border-dashed border-yellow-400 rounded-3xl p-8 mb-12 text-center shadow-lg">
                <div className="bg-yellow-400 text-white font-black px-6 py-1 rounded-full text-xs absolute -mt-11 left-1/2 -translate-x-1/2 shadow">RESERVED FOR YOU</div>
-               <h2 className="text-2xl font-black text-gray-900 mb-4 uppercase">🎁 CLAIM YOUR FREE $3,000 ASSET</h2>
+               <h2 className="text-2xl font-black text-gray-900 mb-4 uppercase">🎁 Your $200 Gift is Here</h2>
                <p className="text-gray-700 mb-8 text-lg font-medium leading-relaxed">
-                  As promised in the video, here is your unregistered nested domain. <br className="hidden md:block" /> 
-                  It's already verified and ready to be flipped.
+                  As promised, here is your gift for watching. We said $200, but this verified domain below is independently valued at over <span className="font-bold text-gray-900">$15,000</span>.
                </p>
                <div className="bg-white p-8 rounded-2xl border-2 border-yellow-300 shadow-sm inline-block w-full max-w-md relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-2 bg-green-100 text-green-700 text-[10px] font-black rounded-bl-xl uppercase">Verified</div>
                   <span className="block text-xs text-gray-400 uppercase font-black mb-3 tracking-widest">Reserved Domain:</span>
-                  <span className="text-3xl font-mono font-black text-[#1b1464] tracking-tighter group-hover:scale-105 transition-transform block">lides.co.uk</span>
+                  <span className="text-3xl font-mono font-black text-[#1b1464] tracking-tighter group-hover:scale-105 transition-transform block">drews.it.com</span>
                   <div className="mt-6 flex flex-col gap-2">
-                     <div className="text-gray-500 text-sm font-bold">MARKETPLACE CONFIRMED VALUE: <span className="text-green-600">$1,206.00</span></div>
+                     <div className="text-gray-500 text-sm font-bold">ESTIMATED VALUATION: <span className="text-green-600">$15,900.00</span></div>
                      <div className="text-[10px] text-gray-400 uppercase">Values based on Sedo/GoDaddy automated metrics.</div>
                   </div>
                </div>
-               <p className="mt-8 text-gray-500 text-sm">Cost to register: <span className="font-bold text-gray-800">$6.99</span>. Instructions are included in the package below.</p>
+               <p className="mt-8 text-gray-500 text-sm">Instructions on how to claim this for $7 are included in the package below.</p>
             </div>
 
             {/* Main Offer Card */}
