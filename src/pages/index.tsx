@@ -105,13 +105,13 @@ export default function DeepDomainsLP() {
                <div className="bg-white p-8 rounded-2xl border-2 border-yellow-300 shadow-sm inline-block w-full max-w-md relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-2 bg-green-100 text-green-700 text-[10px] font-black rounded-bl-xl uppercase">Verified</div>
                   <span className="block text-xs text-gray-400 uppercase font-black mb-3 tracking-widest">Reserved Domain:</span>
-                  <span className="text-3xl font-mono font-black text-[#1b1464] tracking-tighter group-hover:scale-105 transition-transform block">drews.it.com</span>
+                  <span className="text-3xl font-mono font-black text-[#1b1464] tracking-tighter group-hover:scale-105 transition-transform block">lides.co.uk</span>
                   <div className="mt-6 flex flex-col gap-2">
-                     <div className="text-gray-500 text-sm font-bold">ESTIMATED VALUATION: <span className="text-green-600">$15,900.00</span></div>
+                     <div className="text-gray-500 text-sm font-bold">MARKETPLACE CONFIRMED VALUE: <span className="text-green-600">$1,206.00</span></div>
                      <div className="text-[10px] text-gray-400 uppercase">Values based on Sedo/GoDaddy automated metrics.</div>
                   </div>
                </div>
-               <p className="mt-8 text-gray-500 text-sm">Instructions on how to claim this for $7 are included in the package below.</p>
+               <p className="mt-8 text-gray-500 text-sm">Cost to register: <span className="font-bold text-gray-800">$6.99</span>. Instructions are included in the package below.</p>
             </div>
 
             {/* Main Offer Card */}
@@ -128,11 +128,12 @@ export default function DeepDomainsLP() {
                     <h3 className="text-xl font-bold text-gray-900 border-l-4 border-[#1b1464] pl-4">What's included:</h3>
                     <ul className="space-y-4">
                       {[
-                        { t: "Deep Domains AI Finder", d: "Instantly locate 'Gems' among 800M+ domains." },
-                        { t: "Daily 'Hot-Pick' Lists", d: "Fresh opportunities delivered to your dashboard." },
-                        { t: "The 3-Click Flip Method", d: "Tutorial on how to sell in days, not months." },
-                        { t: "Lifetime Membership", d: "Zero monthly fees. Ever. (Value: $1,997/yr)" },
-                        { t: "VIP Community Access", d: "Network with other members and share strategies." }
+                        { t: "LIFETIME unlimited access to our members area" },
+                        { t: "200+ new nested domains added every day", d: "each valued between $3,000 and $20,000" },
+                        { t: "67-page ‘$0–$100,000 Fast-Track’ Blueprint", d: "a step-by-step, easy-to-follow guide to reaching your first $100,000 profit" },
+                        { t: "LIFETIME updates and access to all upcoming products" },
+                        { t: "Professional, fast-response client support" },
+                        { t: "Locked-in savings", d: "others will soon pay monthly, but you’ll keep full access for life with no recurring fees. That’s a $240/year savings!" }
                       ].map((item, i) => (
                         <li key={i} className="flex items-start gap-4">
                           <div className="mt-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center shrink-0">
@@ -150,15 +151,15 @@ export default function DeepDomainsLP() {
                   <div className="text-center bg-gray-50 p-10 rounded-3xl border border-gray-100 relative shadow-inner">
                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-black px-4 py-1 rounded-full shadow-lg">LIMITED SLOTS LEFT</div>
                      <div className="text-gray-400 line-through text-lg mb-1 font-bold">Value: $497</div>
-                     <div className="text-7xl font-black text-gray-900 mb-1">$27</div>
+                     <div className="text-7xl font-black text-gray-900 mb-1">$67</div>
                      <div className="text-[10px] font-black text-[#1b1464] uppercase tracking-widest mb-10 bg-blue-50 py-1 rounded">One-Time Final Payment</div>
                      
                      <a 
-                      href="https://hop.clickbank.net/?affiliate=YOURAFF&vendor=NESTDOMAIN" 
+                      href="https://pay.mycheckoutt.com/01985d25-baa2-7213-9f1c-a96b491b23d8?ref=" 
                       className="group block w-full bg-green-500 hover:bg-green-600 text-white py-6 rounded-2xl text-2xl font-black transition-all shadow-[0_10px_20px_rgba(34,197,94,0.3)] hover:-translate-y-1 active:scale-95 uppercase tracking-tighter"
                      >
-                       Join Now & Start
-                       <span className="block text-xs font-medium opacity-80 group-hover:opacity-100 mt-1">Instant Digital Access</span>
+                       Join Now!
+                       <span className="block text-xs font-medium opacity-80 group-hover:opacity-100 mt-1">(no subscriptions, no rebills — saves you $240/year)</span>
                      </a>
                      
                      <div className="mt-8 flex justify-center gap-4 grayscale opacity-50">
@@ -177,9 +178,9 @@ export default function DeepDomainsLP() {
                  <div className="inline-block w-24 h-24 mb-8 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
                     <span className="text-5xl">🛡️</span>
                  </div>
-                 <h3 className="text-2xl font-black mb-6 tracking-wide uppercase">Your Success Is Guaranteed</h3>
+                 <h3 className="text-2xl font-black mb-6 tracking-wide uppercase">180-Day Money Back Guarantee</h3>
                  <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light italic">
-                    "I want to make this the easiest decision of your year. Try Deep Domains for **60 full days**. Use the AI, flip your first domain, see the results. If you're not thrilled—I'll give you a full refund. No questions asked. You keep the $3,000 domain gem as my gift to you just for trying."
+                    "If for ANY reason you are not happy with your purchase, simply email us within 180 days for a full, no questions asked, refund of your money."
                  </p>
                  <div className="font-bold text-white mb-2">ROBIN</div>
                  <div className="text-xs text-blue-400 font-bold uppercase tracking-widest">CREATOR, DEEP DOMAINS</div>
@@ -193,10 +194,8 @@ export default function DeepDomainsLP() {
       <footer className="bg-gray-100 border-t border-gray-200 py-16 px-4 mt-20">
         <div className="max-w-4xl mx-auto text-center text-[10px] sm:text-xs text-gray-400">
            <div className="mb-8 flex justify-center gap-8 font-bold uppercase tracking-widest list-none">
-             <a href="#" className="hover:text-gray-900 transition-colors">Terms</a>
+             <a href="#" className="hover:text-gray-900 transition-colors">Terms of Service</a>
              <a href="#" className="hover:text-gray-900 transition-colors">Privacy</a>
-             <a href="#" className="hover:text-gray-900 transition-colors">Support</a>
-             <a href="#" className="hover:text-gray-900 transition-colors">Earnings</a>
            </div>
            <div className="border border-gray-200 p-8 rounded-2xl mb-10 bg-white/50">
              <p className="mb-4 uppercase tracking-tighter font-black text-gray-300">Important Earnings Disclaimer</p>
