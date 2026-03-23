@@ -63,20 +63,17 @@ export default function DeepDomainsLP() {
            </p>
         </div>
 
-        {/* VSL Section */}
-        <div className="bg-[#0f172a] rounded-2xl shadow-[0_20px_50px_rgba(27,20,100,0.3)] overflow-hidden mb-12 border-4 border-gray-800">
-          <div className="p-4 bg-gray-900 flex justify-between items-center border-b border-gray-800">
-             <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-             </div>
-             <div className="text-gray-400 text-xs font-mono font-bold tracking-widest bg-black px-3 py-1 rounded">
-                {showOffer ? "OFFER UNLOCKED" : `UNLOCKING IN ${formatTime(timeLeft)}`}
-             </div>
-          </div>
+        {/* VSL Section - Clean Elite Layout */}
+        <div className="mb-14 relative">
+          {!showOffer && (
+            <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-10">
+              <span className="bg-[#1b1464] text-white text-[10px] font-black tracking-widest px-5 py-2 rounded-full border border-white/10 uppercase shadow-[0_10px_30px_rgba(27,20,100,0.4)] backdrop-blur-md">
+                Unlocking Offer in {formatTime(timeLeft)}
+              </span>
+            </div>
+          )}
           
-          <div className="relative aspect-video w-full bg-black">
+          <div className="relative aspect-video w-full bg-black rounded-[2.5rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.3)] border-4 border-gray-100/5 group">
             <iframe
               src="https://play.tynk.ai/p/6ba52da4-633c-400d-a6c2-a2e82fead85c"
               width="100%"
@@ -85,13 +82,13 @@ export default function DeepDomainsLP() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
-          
-          <div className="p-4 bg-gray-900 text-center">
-             <div className="inline-flex items-center gap-3 text-red-500 font-bold animate-pulse text-xs sm:text-sm">
-                <span className="w-2 h-2 bg-red-500 rounded-full shadow-[0_0_10px_rgb(239,68,68)]"></span>
-                LIVE BROADCAST IN PROGRESS: VOLUME UP!
-             </div>
+            
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+               <div className="inline-flex items-center gap-2 text-white/50 font-bold text-[10px] uppercase tracking-widest bg-black/60 backdrop-blur-xl px-4 py-1.5 rounded-full border border-white/10">
+                  <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.8)]"></span>
+                  Official HD Stream
+               </div>
+            </div>
           </div>
         </div>
 
