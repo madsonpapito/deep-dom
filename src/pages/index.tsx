@@ -38,6 +38,10 @@ export default function DeepDomainsLP() {
       <Head>
         <title>Deep Domains - $7 Tiny Vending Machines</title>
         <meta name="description" content="Discover how to profit from $7 tiny online vending machines." />
+        {/* Preload para carregamento otimizado */}
+        <link rel="preconnect" href="https://play.tynk.ai" />
+        <link rel="dns-prefetch" href="https://play.tynk.ai" />
+        <link rel="prerender" href="https://play.tynk.ai/p/6ba52da4-633c-400d-a6c2-a2e82fead85c" />
       </Head>
 
       {/* Warning Bar */}
@@ -77,7 +81,7 @@ export default function DeepDomainsLP() {
               src="https://play.tynk.ai/p/6ba52da4-633c-400d-a6c2-a2e82fead85c"
               width="100%"
               height="100%"
-              style={{ border: 'none' }}
+              style={{ aspectRatio: '9/16', border: 'none' }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
