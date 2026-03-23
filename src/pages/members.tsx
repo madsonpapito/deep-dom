@@ -108,6 +108,36 @@ export default function MembersElitePortal() {
           {/* Main Area: 8 Columns */}
           <div className="lg:col-span-8 space-y-12">
              
+             {/* Tutorial Video Section */}
+             <section className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-xl overflow-hidden mb-12">
+                <div className="flex items-center gap-4 mb-6">
+                   <div className="w-1.5 h-8 bg-[#1b1464] rounded-full"></div>
+                   <div>
+                      <h3 className="text-2xl font-black tracking-tighter uppercase text-slate-900 leading-none">Tutorial Video</h3>
+                      <p className="text-slate-500 text-sm font-medium mt-1">Complete strategy in 10 minutes.</p>
+                   </div>
+                </div>
+                
+                <div className="aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 shadow-2xl mb-6">
+                   <iframe
+                     src="https://play.tynk.ai/p/c18ea35a-6ae6-43c1-bcf1-3b296546331b"
+                     width="100%"
+                     height="100%"
+                     style={{ border: 'none' }}
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowFullScreen
+                   ></iframe>
+                </div>
+                
+                <div className="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                   <span className="text-[10px] font-black uppercase text-slate-400 tracking-widest">Mastering the Strategy</span>
+                   <div className="flex items-center gap-2 text-[#1b1464] font-black text-xs uppercase hover:text-indigo-600 transition-colors">
+                      <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-pulse"></span>
+                      Watch Now
+                   </div>
+                </div>
+             </section>
+
              {/* Dynamic Update Info */}
              <div className="bg-slate-900 rounded-[2rem] p-8 text-white relative overflow-hidden shadow-2xl">
                 <div className="absolute top-0 right-0 p-8 opacity-5">
