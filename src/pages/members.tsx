@@ -160,6 +160,40 @@ export default function MembersElitePortal() {
                 </div>
              </section>
 
+             {/* Digital Bonuses Section */}
+             <section className="pt-8 mb-12">
+                <div className="flex items-center gap-4 mb-8">
+                   <div className="w-1.5 h-10 bg-[#1b1464] rounded-full"></div>
+                   <h3 className="text-3xl font-black tracking-tighter uppercase text-slate-900">Digital Bonuses & Downloads</h3>
+                </div>
+                
+                <div className="grid sm:grid-cols-2 gap-8">
+                   {/* Bonus 1 */}
+                   <div className="bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-sm hover:shadow-2xl transition-all group">
+                      <div className="aspect-[16/10] bg-slate-100 relative overflow-hidden border-b border-slate-100">
+                         <img src="/bonuses/0-to-100k-Fast-Track.webp" alt="0 to 100k Fast Track" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                         <div className="absolute inset-0 bg-[#1b1464]/10 group-hover:bg-transparent transition-colors"></div>
+                      </div>
+                      <div className="p-8">
+                         <h4 className="font-black text-xl mb-4 leading-tight uppercase tracking-tighter text-[#1b1464]">0 to $100,000 Fast-Track Blueprint</h4>
+                         <a href="/bonuses/0-to-100k-Fast-Track.pdf" target="_blank" className="block w-full text-center bg-[#1b1464] text-white py-4 rounded-2xl font-black text-sm uppercase hover:bg-yellow-400 hover:text-slate-900 transition-all shadow-xl active:scale-95">Download PDF Guide</a>
+                      </div>
+                   </div>
+
+                   {/* Bonus 2 */}
+                   <div className="bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-sm hover:shadow-2xl transition-all group">
+                      <div className="aspect-[16/10] bg-slate-100 relative overflow-hidden border-b border-slate-100">
+                         <img src="/bonuses/the-science-of-creating-wealth-1.webp" alt="The Science of Creating Wealth" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                         <div className="absolute inset-0 bg-[#1b1464]/10 group-hover:bg-transparent transition-colors"></div>
+                      </div>
+                      <div className="p-8">
+                         <h4 className="font-black text-xl mb-4 leading-tight uppercase tracking-tighter text-[#1b1464]">The Science of Creating Wealth</h4>
+                         <a href="/bonuses/the-science-of-creating-wealth-1.pdf" target="_blank" className="block w-full text-center bg-[#1b1464] text-white py-4 rounded-2xl font-black text-sm uppercase hover:bg-yellow-400 hover:text-slate-900 transition-all shadow-xl active:scale-95">Download PDF Guide</a>
+                      </div>
+                   </div>
+                </div>
+             </section>
+
              {/* Deliverables: Gems & Domains */}
              <div className="space-y-16 pt-8">
                

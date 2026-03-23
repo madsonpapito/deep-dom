@@ -65,13 +65,6 @@ export default function DeepDomainsLP() {
 
         {/* VSL Section - Clean Elite Layout */}
         <div className="mb-14 relative flex justify-center">
-          {!showOffer && (
-            <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20">
-              <span className="bg-[#1b1464] text-white text-[10px] font-black tracking-widest px-5 py-2 rounded-full border border-white/10 uppercase shadow-[0_10px_30px_rgba(27,20,100,0.4)] backdrop-blur-md whitespace-nowrap">
-                Unlocking Offer in {formatTime(timeLeft)}
-              </span>
-            </div>
-          )}
           
           <div className="relative w-full max-w-[450px] aspect-[9/16] bg-black rounded-3xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.4)] border border-gray-200/5 group">
             <iframe
