@@ -175,7 +175,7 @@ export default function MembersElitePortal() {
                    </p>
                    
                    <div className="aspect-video bg-slate-900 rounded-3xl mb-8 flex items-center justify-center text-white/20 group relative overflow-hidden cursor-pointer shadow-2xl">
-                      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800')] opacity-30 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
+                      <div className="absolute inset-0 bg-[url('/images/thumb_11zon.webp')] opacity-80 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
                       <div className="relative z-10 flex flex-col items-center gap-4 transition-transform group-hover:scale-110">
                          <div className="w-20 h-20 bg-white/20 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/30 shadow-2xl">
                             <span className="text-3xl translate-x-1">▶️</span>
