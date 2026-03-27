@@ -9,7 +9,7 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-export default function WhiteSalesPage() {
+export default function SalesPage1() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -172,7 +172,7 @@ export default function WhiteSalesPage() {
                   Just <span className="text-[#1b1464]">$37 USD</span>
                 </div>
                 
-                <a href="https://pay.mycheckoutt.com/019d2f17-f836-7287-aaed-d0ee6b1c0af2?ref=" className="flex items-center justify-center gap-4 w-full bg-[#1b1464] text-white py-8 rounded-[2rem] font-black text-2xl sm:text-3xl hover:bg-yellow-400 hover:text-slate-900 transition-all shadow-2xl uppercase tracking-tighter active:scale-95 group">
+                <a href="https://pay.mycheckoutt.com/01985d27-16ed-70fd-954a-e03cf56447f4?ref=" className="flex items-center justify-center gap-4 w-full bg-[#1b1464] text-white py-8 rounded-[2rem] font-black text-2xl sm:text-3xl hover:bg-yellow-400 hover:text-slate-900 transition-all shadow-2xl uppercase tracking-tighter active:scale-95 group">
                   Add To Cart
                   <span className="text-2xl group-hover:translate-x-2 transition-transform">➔</span>
                 </a>
