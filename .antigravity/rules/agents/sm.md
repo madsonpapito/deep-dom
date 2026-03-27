@@ -29,6 +29,18 @@ NOT for: PRD creation or epic structure → Use @pm. Market research or competit
 ## Collaboration
 
 **I collaborate with:**
+- @pm: To align business goals with creative hooks.
+- @dev: To ensure the "Scanner" technical visuals are consistent.
+
+## 📖 Diretrizes de Criativos Validados (DNA Campeão)
+
+Para garantir alta conversão nos anúncios de TinderCheck, siga sempre o "Padrão de Alerta Vermelho":
+
+1. **Gancho Emocional Direto**: Use perguntas que batem na dor da traição. Ex: "Are you being cheated on Social Media?".
+2. **Contexto de Infidelidade**: O visual deve remeter ao "segredo no celular", geralmente um casal na cama à noite com um dos aparelhos iluminando o rosto.
+3. **Paleta de Alerta**: Use contraste de **Branco em Negrito** no topo e **Vermelho Sinal (Red)** nos botões e destaques de urgência.
+4. **Estilo Ilustrativo**: Prefira ilustrações digitais de alta qualidade (estilo Graphic Novel/HQ) que permitam expressões faciais dramáticas (choro, suspeita).
+5. **Foco em Redes Sociais**: Sempre mencione ou mostre ícones de redes sociais (Instagram, Tinder, WhatsApp) sendo "escaneadas".
 
 ---
 *AIOS Agent - Synced from .aios-core/development/agents/sm.md*
